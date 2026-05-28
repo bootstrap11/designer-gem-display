@@ -5,10 +5,10 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Studio" },
-      { name: "description", content: "Get in touch about a product, IoT, or interface project." },
-      { property: "og:title", content: "Contact — Studio" },
-      { property: "og:description", content: "Available for select projects in 2026." },
+      { title: "Contact — Shyam Hadani" },
+      { name: "description", content: "Get in touch with Shyam Hadani about a product, furniture, or interface project." },
+      { property: "og:title", content: "Contact — Shyam Hadani" },
+      { property: "og:description", content: "Available for internships and collaborations." },
     ],
   }),
   component: Contact,
@@ -26,25 +26,35 @@ function Contact() {
             Tell me what you're <em className="text-primary not-italic">building</em>.
           </h1>
           <p className="mt-8 max-w-xl text-lg text-muted-foreground text-pretty">
-            Product, IoT, interfaces, or something stranger. I take on a few
-            engagements each quarter — write with what you have, even if it's
-            a sentence.
+            Product, furniture, IoT, interfaces — or anything in between.
+            Open to internships, collaborations and a good conversation.
+            Based in Ahmedabad.
           </p>
 
           <div className="mt-14 grid gap-8 md:grid-cols-2">
             <a
-              href="mailto:hello@studio.com"
+              href="mailto:Hadanishyam@gmail.com"
               className="group rounded-2xl border border-border/60 p-8 hover:bg-card transition"
             >
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Email</p>
-              <p className="mt-3 font-serif text-3xl">hello@studio.com</p>
+              <p className="mt-3 font-serif text-3xl break-all">Hadanishyam@gmail.com</p>
               <p className="mt-2 text-sm text-muted-foreground group-hover:text-foreground">
                 Best for project enquiries →
               </p>
             </a>
-            <div className="rounded-2xl border border-border/60 p-8">
+            <a
+              href="tel:+919408886632"
+              className="group rounded-2xl border border-border/60 p-8 hover:bg-card transition"
+            >
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Phone</p>
+              <p className="mt-3 font-serif text-3xl">+91 94088 86632</p>
+              <p className="mt-2 text-sm text-muted-foreground group-hover:text-foreground">
+                Ahmedabad, India →
+              </p>
+            </a>
+            <div className="rounded-2xl border border-border/60 p-8 md:col-span-2">
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Elsewhere</p>
-              <ul className="mt-3 space-y-2 text-base">
+              <ul className="mt-3 flex flex-wrap gap-x-8 gap-y-2 text-base">
                 <li><a href="#" className="hover:text-primary">Behance ↗</a></li>
                 <li><a href="#" className="hover:text-primary">LinkedIn ↗</a></li>
                 <li><a href="#" className="hover:text-primary">Instagram ↗</a></li>

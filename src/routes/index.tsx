@@ -7,13 +7,13 @@ import { projects } from "@/data/projects";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Studio — Product Designer Portfolio" },
+      { title: "Shyam Hadani — Product Designer" },
       {
         name: "description",
         content:
-          "Selected work in product, industrial and interaction design — physical objects, digital interfaces, and the systems in between.",
+          "Portfolio of Shyam Hadani, a product designer based in Ahmedabad working across industrial product, IoT, UI/UX and material-led design.",
       },
-      { property: "og:title", content: "Studio — Product Designer Portfolio" },
+      { property: "og:title", content: "Shyam Hadani — Product Designer" },
       {
         property: "og:description",
         content: "Selected work in product, industrial and interaction design.",
@@ -34,17 +34,17 @@ function Index() {
         <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-32 md:pt-36 md:pb-44">
           <div className="flex items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
             <span className="h-px w-10 bg-muted-foreground/60" />
-            Portfolio · 2022 — 2026
+            Shyam Hadani · Ahmedabad
           </div>
           <h1 className="mt-8 font-serif text-[3.25rem] sm:text-7xl md:text-[7.5rem] leading-[0.95] text-balance max-w-5xl">
-            Designing <em className="text-primary not-italic">objects</em>,
+            Designing <em className="text-primary not-italic">objects</em>
             <br />
-            interfaces and the <em className="italic font-serif">quiet systems</em> between.
+            that solve <em className="italic font-serif">everyday problems</em> often unnoticed.
           </h1>
           <p className="mt-10 max-w-xl text-lg text-muted-foreground text-pretty">
-            I'm a product designer working across physical product, IoT, UI/UX
-            and material-led concepts. A decade-curious approach, ten selected
-            projects below.
+            I'm a third-year B.Des student at the Institute of Design, Nirma
+            University. For me, design goes beyond aesthetics — it's a tool to
+            address the small frictions of everyday life. Selected work below.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
