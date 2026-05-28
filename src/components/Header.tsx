@@ -5,7 +5,7 @@ export function Header() {
     <header className="sticky top-0 z-40 backdrop-blur-xl bg-background/60 border-b border-border/40">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
         <Link to="/" className="group flex items-center gap-2">
-          <span className="font-serif text-2xl italic">Studio</span>
+          <span className="font-serif text-2xl italic">Shyam Hadani</span>
           <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-glow transition-transform group-hover:scale-150" />
         </Link>
         <ul className="hidden md:flex items-center gap-10 text-sm text-muted-foreground">
