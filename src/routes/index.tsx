@@ -7,13 +7,13 @@ import { projects } from "@/data/projects";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Studio — Product Designer Portfolio" },
+      { title: "Shyam Hadani — Product Designer" },
       {
         name: "description",
         content:
-          "Selected work in product, industrial and interaction design — physical objects, digital interfaces, and the systems in between.",
+          "Portfolio of Shyam Hadani, a product designer based in Ahmedabad working across industrial product, IoT, UI/UX and material-led design.",
       },
-      { property: "og:title", content: "Studio — Product Designer Portfolio" },
+      { property: "og:title", content: "Shyam Hadani — Product Designer" },
       {
         property: "og:description",
         content: "Selected work in product, industrial and interaction design.",
