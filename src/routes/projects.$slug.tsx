@@ -93,7 +93,7 @@ function ProjectPage() {
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools</p>
               <ul className="flex flex-wrap gap-2">
-                {project.tools.map((t) => (
+                {project.tools.map((t: string) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">
                     {t}
                   </li>
