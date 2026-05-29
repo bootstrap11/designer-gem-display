@@ -72,13 +72,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Studio — Product Designer Portfolio" },
+      { title: "Shyam Hadani Portfolio" },
       { name: "description", content: "Selected work in product, industrial, IoT and interaction design." },
       { name: "author", content: "Studio" },
-      { property: "og:title", content: "Studio — Product Designer Portfolio" },
+      { property: "og:title", content: "Shyam Hadani Portfolio" },
       { property: "og:description", content: "Selected work in product, industrial, IoT and interaction design." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Shyam Hadani Portfolio" },
+      { name: "twitter:description", content: "Selected work in product, industrial, IoT and interaction design." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/227da61f-8aa9-4aa9-9abb-bd4b68ac42d5/id-preview-337f4aec--b9d9926c-af27-400d-8c19-acff39945cf4.lovable.app-1780053741143.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/227da61f-8aa9-4aa9-9abb-bd4b68ac42d5/id-preview-337f4aec--b9d9926c-af27-400d-8c19-acff39945cf4.lovable.app-1780053741143.png" },
     ],
     links: [
       {
