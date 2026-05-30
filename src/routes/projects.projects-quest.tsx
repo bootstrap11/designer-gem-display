@@ -2,6 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
+import boardImg from "@/assets/quest/board.jpeg";
+import appImg from "@/assets/quest/app.jpeg";
+import cardsImg from "@/assets/quest/cards.jpeg";
+import cardsBacksImg from "@/assets/quest/cards-backs.jpeg";
+import cardsChallengeImg from "@/assets/quest/cards-challenge.jpeg";
 
 export const Route = createFileRoute("/projects/projects-quest")({
   head: () => ({
@@ -130,11 +135,17 @@ function QuestPage() {
         {/* Big cover */}
         <section className="mx-auto max-w-6xl px-6">
           <div
-            className="aspect-[16/9] rounded-3xl border border-border/40 bg-noise relative overflow-hidden shadow-glow"
+            className="aspect-[16/9] rounded-3xl border border-border/40 relative overflow-hidden shadow-glow"
             style={{ background: coverGradient }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/80">
+            <img
+              src={boardImg}
+              alt="Quest interactive board game with companion robot, card decks and game tiles"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/90">
               <span>Quest</span>
               <span>2024</span>
             </div>
@@ -340,34 +351,42 @@ function QuestPage() {
         {/* Robot Design */}
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <div className="h-px bg-border/40 mb-24" />
-          <div className="grid gap-16 md:grid-cols-2 items-start">
+          <div className="grid gap-16 md:grid-cols-2 items-center">
+            <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3]">
+              <img
+                src={boardImg}
+                alt="Close-up of the Quest board with the companion robot beside it"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Companion Robot Design</p>
               <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
                 A friend, not a teacher
               </h2>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                The robot is intentionally designed to feel friendly, approachable, and playful rather than technological.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  "Soft and rounded form",
-                  "Expressive digital face",
-                  "Simple body language",
-                  "Child-friendly appearance",
-                  "Clear emotional expressions",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-2 h-1 w-1 rounded-full bg-primary shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="pt-2">
-                Its purpose is not to teach directly, but to guide, react, and support learning through emotional feedback.
-              </p>
+              <div className="mt-6 space-y-4 text-muted-foreground">
+                <p>
+                  The robot is intentionally designed to feel friendly, approachable, and playful rather than technological.
+                </p>
+                <ul className="space-y-2">
+                  {[
+                    "Soft and rounded form",
+                    "Expressive digital face",
+                    "Simple body language",
+                    "Child-friendly appearance",
+                    "Clear emotional expressions",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="mt-2 h-1 w-1 rounded-full bg-primary shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="pt-2">
+                  Its purpose is not to teach directly, but to guide, react, and support learning through emotional feedback.
+                </p>
+              </div>
             </div>
           </div>
         </section>
@@ -379,6 +398,17 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             Dynamic experiences through chance
           </h2>
+          <div className="grid gap-4 sm:grid-cols-3 mb-12">
+            {[
+              { src: cardsBacksImg, alt: "Exchange and Fortune card decks with patterned stamp-style backs" },
+              { src: cardsChallengeImg, alt: "Challenge card deck with illustrated robot front" },
+              { src: cardsImg, alt: "Three Quest cards fanned out — challenge, fortune and surprise" },
+            ].map((img) => (
+              <div key={img.src} className="rounded-2xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3]">
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+              </div>
+            ))}
+          </div>
           <div className="grid gap-6 md:grid-cols-3">
             {cards.map((c) => (
               <div
@@ -402,6 +432,14 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             Customise every session
           </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-12">
+            <img
+              src={appImg}
+              alt="Three screens of the Quest companion app — calendar home, set emotions, and set environment"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="grid gap-12 md:grid-cols-3">
             <div>
               <h3 className="font-serif text-2xl mb-3">Difficulty Selection</h3>
