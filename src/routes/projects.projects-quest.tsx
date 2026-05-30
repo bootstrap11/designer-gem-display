@@ -351,34 +351,42 @@ function QuestPage() {
         {/* Robot Design */}
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <div className="h-px bg-border/40 mb-24" />
-          <div className="grid gap-16 md:grid-cols-2 items-start">
+          <div className="grid gap-16 md:grid-cols-2 items-center">
+            <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3]">
+              <img
+                src={boardImg}
+                alt="Close-up of the Quest board with the companion robot beside it"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Companion Robot Design</p>
               <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance">
                 A friend, not a teacher
               </h2>
-            </div>
-            <div className="space-y-4 text-muted-foreground">
-              <p>
-                The robot is intentionally designed to feel friendly, approachable, and playful rather than technological.
-              </p>
-              <ul className="space-y-2">
-                {[
-                  "Soft and rounded form",
-                  "Expressive digital face",
-                  "Simple body language",
-                  "Child-friendly appearance",
-                  "Clear emotional expressions",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="mt-2 h-1 w-1 rounded-full bg-primary shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="pt-2">
-                Its purpose is not to teach directly, but to guide, react, and support learning through emotional feedback.
-              </p>
+              <div className="mt-6 space-y-4 text-muted-foreground">
+                <p>
+                  The robot is intentionally designed to feel friendly, approachable, and playful rather than technological.
+                </p>
+                <ul className="space-y-2">
+                  {[
+                    "Soft and rounded form",
+                    "Expressive digital face",
+                    "Simple body language",
+                    "Child-friendly appearance",
+                    "Clear emotional expressions",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <span className="mt-2 h-1 w-1 rounded-full bg-primary shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <p className="pt-2">
+                  Its purpose is not to teach directly, but to guide, react, and support learning through emotional feedback.
+                </p>
+              </div>
             </div>
           </div>
         </section>
