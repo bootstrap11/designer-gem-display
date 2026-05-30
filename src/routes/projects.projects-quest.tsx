@@ -7,6 +7,11 @@ import appImg from "@/assets/quest/app.jpeg";
 import cardsImg from "@/assets/quest/cards.jpeg";
 import cardsBacksImg from "@/assets/quest/cards-backs.jpeg";
 import cardsChallengeImg from "@/assets/quest/cards-challenge.jpeg";
+import kidsPlayingImg from "@/assets/quest/kids-playing.jpeg";
+import zonesImg from "@/assets/quest/zones.jpeg";
+import robotEmotionImg from "@/assets/quest/robot-emotion.jpeg";
+import robotIdeationsImg from "@/assets/quest/robot-ideations.jpeg";
+import robotViewImg from "@/assets/quest/robot-view.jpeg";
 
 export const Route = createFileRoute("/projects/projects-quest")({
   head: () => ({
@@ -139,8 +144,8 @@ function QuestPage() {
             style={{ background: coverGradient }}
           >
             <img
-              src={boardImg}
-              alt="Quest interactive board game with companion robot, card decks and game tiles"
+              src={kidsPlayingImg}
+              alt="Two children laughing while playing Quest at home with the board, robot and cards spread around"
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
             />
@@ -330,6 +335,14 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             Familiar environments, real lessons
           </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-10">
+            <img
+              src={zonesImg}
+              alt="Illustrated Quest world zones — school, home, playground, bus stop and supermarket"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {zones.map((z) => (
               <div
@@ -354,8 +367,8 @@ function QuestPage() {
           <div className="grid gap-16 md:grid-cols-2 items-center">
             <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3]">
               <img
-                src={boardImg}
-                alt="Close-up of the Quest board with the companion robot beside it"
+                src={robotEmotionImg}
+                alt="Companion robot beside the board, smiling and reacting to player decisions"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -389,6 +402,29 @@ function QuestPage() {
               </div>
             </div>
           </div>
+
+          {/* Ideation + final views */}
+          <div className="mt-16 grid gap-6 md:grid-cols-5">
+            <div className="md:col-span-2 rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[3/4]">
+              <img
+                src={robotIdeationsImg}
+                alt="Sketchbook page with dozens of early robot character ideations"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-3 rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3] md:aspect-auto">
+              <img
+                src={robotViewImg}
+                alt="Three final robot pawns rendered in yellow, teal and coral colourways"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground max-w-2xl">
+            From dozens of sketched character directions to a final form language — soft, rounded, expressive, and unmistakably a friend.
+          </p>
         </section>
 
         {/* Card System */}
