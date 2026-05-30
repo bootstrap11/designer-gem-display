@@ -144,8 +144,8 @@ function QuestPage() {
             style={{ background: coverGradient }}
           >
             <img
-              src={boardImg}
-              alt="Quest interactive board game with companion robot, card decks and game tiles"
+              src={kidsPlayingImg}
+              alt="Two children laughing while playing Quest at home with the board, robot and cards spread around"
               className="absolute inset-0 w-full h-full object-cover"
               loading="eager"
             />
