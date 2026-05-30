@@ -432,6 +432,14 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             Customise every session
           </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-12">
+            <img
+              src={appImg}
+              alt="Three screens of the Quest companion app — calendar home, set emotions, and set environment"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="grid gap-12 md:grid-cols-3">
             <div>
               <h3 className="font-serif text-2xl mb-3">Difficulty Selection</h3>
