@@ -335,6 +335,14 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             Familiar environments, real lessons
           </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-10">
+            <img
+              src={zonesImg}
+              alt="Illustrated Quest world zones — school, home, playground, bus stop and supermarket"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {zones.map((z) => (
               <div
