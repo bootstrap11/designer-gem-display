@@ -367,8 +367,8 @@ function QuestPage() {
           <div className="grid gap-16 md:grid-cols-2 items-center">
             <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3]">
               <img
-                src={boardImg}
-                alt="Close-up of the Quest board with the companion robot beside it"
+                src={robotEmotionImg}
+                alt="Companion robot beside the board, smiling and reacting to player decisions"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -402,6 +402,29 @@ function QuestPage() {
               </div>
             </div>
           </div>
+
+          {/* Ideation + final views */}
+          <div className="mt-16 grid gap-6 md:grid-cols-5">
+            <div className="md:col-span-2 rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[3/4]">
+              <img
+                src={robotIdeationsImg}
+                alt="Sketchbook page with dozens of early robot character ideations"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="md:col-span-3 rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3] md:aspect-auto">
+              <img
+                src={robotViewImg}
+                alt="Three final robot pawns rendered in yellow, teal and coral colourways"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground max-w-2xl">
+            From dozens of sketched character directions to a final form language — soft, rounded, expressive, and unmistakably a friend.
+          </p>
         </section>
 
         {/* Card System */}
