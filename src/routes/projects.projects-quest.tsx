@@ -135,11 +135,17 @@ function QuestPage() {
         {/* Big cover */}
         <section className="mx-auto max-w-6xl px-6">
           <div
-            className="aspect-[16/9] rounded-3xl border border-border/40 bg-noise relative overflow-hidden shadow-glow"
+            className="aspect-[16/9] rounded-3xl border border-border/40 relative overflow-hidden shadow-glow"
             style={{ background: coverGradient }}
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/80">
+            <img
+              src={boardImg}
+              alt="Quest interactive board game with companion robot, card decks and game tiles"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/90">
               <span>Quest</span>
               <span>2024</span>
             </div>
