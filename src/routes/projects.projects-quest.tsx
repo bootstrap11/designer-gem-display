@@ -2,6 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
+import boardImg from "@/assets/quest/board.jpeg";
+import appImg from "@/assets/quest/app.jpeg";
+import cardsImg from "@/assets/quest/cards.jpeg";
+import cardsBacksImg from "@/assets/quest/cards-backs.jpeg";
+import cardsChallengeImg from "@/assets/quest/cards-challenge.jpeg";
 
 export const Route = createFileRoute("/projects/projects-quest")({
   head: () => ({
