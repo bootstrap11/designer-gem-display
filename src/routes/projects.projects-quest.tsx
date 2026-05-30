@@ -398,6 +398,17 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             Dynamic experiences through chance
           </h2>
+          <div className="grid gap-4 sm:grid-cols-3 mb-12">
+            {[
+              { src: cardsBacksImg, alt: "Exchange and Fortune card decks with patterned stamp-style backs" },
+              { src: cardsChallengeImg, alt: "Challenge card deck with illustrated robot front" },
+              { src: cardsImg, alt: "Three Quest cards fanned out — challenge, fortune and surprise" },
+            ].map((img) => (
+              <div key={img.src} className="rounded-2xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3]">
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+              </div>
+            ))}
+          </div>
           <div className="grid gap-6 md:grid-cols-3">
             {cards.map((c) => (
               <div
