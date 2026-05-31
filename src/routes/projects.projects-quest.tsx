@@ -416,13 +416,23 @@ function QuestPage() {
                 loading="lazy"
               />
             </div>
-            <div className="md:col-span-3 rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3] md:aspect-auto">
-              <img
-                src={robotViewImg}
-                alt="Three final robot pawns rendered in yellow, teal and coral colourways"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+            <div className="md:col-span-3 grid grid-rows-2 gap-6">
+              <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40">
+                <img
+                  src={robotViewImg}
+                  alt="Three final robot pawns rendered in yellow, teal and coral colourways"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40">
+                <img
+                  src={robotTrioImg}
+                  alt="Back view of three matte black robot pawns with yellow, teal and coral toggle switches on top"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
           <p className="mt-6 text-sm text-muted-foreground max-w-2xl">
