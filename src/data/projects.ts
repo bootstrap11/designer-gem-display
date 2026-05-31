@@ -22,8 +22,8 @@ export const projects: Project[] = [
       "A physical board game that teaches children social behaviour through decisions, actions, and emotional feedback loops.",
     category: "Game Design",
     year: "2024",
-    role: "Concept, System Design, Prototyping",
-    tools: ["Illustrator", "Paper Prototyping", "User Testing"],
+    role: "Industrial Design, CAD, Rendering, Electronics & Coding",
+    tools: ["SolidWorks", "KeyShot", "Arduino", "Coding"],
     span: "tall",
     cover:
       "linear-gradient(135deg, oklch(0.45 0.20 280) 0%, oklch(0.30 0.15 320) 60%, oklch(0.20 0.10 260) 100%)",
