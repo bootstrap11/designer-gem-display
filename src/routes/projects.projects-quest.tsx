@@ -473,8 +473,8 @@ function QuestPage() {
           </h2>
           <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-12">
             <img
-              src={appImg}
-              alt="Three screens of the Quest companion app — calendar home, set emotions, and set environment"
+              src={uiUxImg}
+              alt="Three screens of the Quest companion app — set emotions list, home calendar with recent setup, and environment themes"
               className="w-full h-auto object-cover"
               loading="lazy"
             />
