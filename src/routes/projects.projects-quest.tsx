@@ -12,6 +12,9 @@ import zonesImg from "@/assets/quest/zones.jpeg";
 import robotEmotionImg from "@/assets/quest/robot-emotion.jpeg";
 import robotIdeationsImg from "@/assets/quest/robot-ideations.jpeg";
 import robotViewImg from "@/assets/quest/robot-view.jpeg";
+import robotTrioImg from "@/assets/quest/robot-trio.jpeg";
+import situationScreenImg from "@/assets/quest/situation-screen.jpeg";
+import uiUxImg from "@/assets/quest/ui-ux.jpeg";
 
 export const Route = createFileRoute("/projects/projects-quest")({
   head: () => ({
