@@ -160,13 +160,13 @@ function QuestPage() {
         {/* Intro grid */}
         <section className="mx-auto max-w-6xl px-6 py-24 grid gap-16 md:grid-cols-[1fr_2fr]">
           <aside className="space-y-8 text-sm">
-            <Field label="Role" value="Concept, System Design, Prototyping" />
+            <Field label="Role" value="Industrial Design, CAD, Rendering, Electronics & Coding" />
             <Field label="Year" value="2024" />
             <Field label="Category" value="Game Design" />
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools</p>
               <ul className="flex flex-wrap gap-2">
-                {["Illustrator", "Paper Prototyping", "User Testing"].map((t) => (
+                {["SolidWorks", "KeyShot", "Arduino", "Coding"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">
                     {t}
                   </li>
