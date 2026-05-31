@@ -12,6 +12,9 @@ import zonesImg from "@/assets/quest/zones.jpeg";
 import robotEmotionImg from "@/assets/quest/robot-emotion.jpeg";
 import robotIdeationsImg from "@/assets/quest/robot-ideations.jpeg";
 import robotViewImg from "@/assets/quest/robot-view.jpeg";
+import robotTrioImg from "@/assets/quest/robot-trio.jpeg";
+import situationScreenImg from "@/assets/quest/situation-screen.jpeg";
+import uiUxImg from "@/assets/quest/ui-ux.jpeg";
 
 export const Route = createFileRoute("/projects/projects-quest")({
   head: () => ({
@@ -279,6 +282,14 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             How a turn unfolds
           </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-14">
+            <img
+              src={situationScreenImg}
+              alt="Quest board with two robot pawns mid-game, card decks and the integrated situation screen prompting the player with a multiple-choice scenario"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="space-y-0">
             {gameplaySteps.map((step, i) => (
               <div key={step.num} className="flex gap-6 md:gap-10 group">
@@ -413,13 +424,23 @@ function QuestPage() {
                 loading="lazy"
               />
             </div>
-            <div className="md:col-span-3 rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-[4/3] md:aspect-auto">
-              <img
-                src={robotViewImg}
-                alt="Three final robot pawns rendered in yellow, teal and coral colourways"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
+            <div className="md:col-span-3 grid grid-rows-2 gap-6">
+              <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40">
+                <img
+                  src={robotViewImg}
+                  alt="Three final robot pawns rendered in yellow, teal and coral colourways"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40">
+                <img
+                  src={robotTrioImg}
+                  alt="Back view of three matte black robot pawns with yellow, teal and coral toggle switches on top"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </div>
           <p className="mt-6 text-sm text-muted-foreground max-w-2xl">
@@ -470,8 +491,8 @@ function QuestPage() {
           </h2>
           <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-12">
             <img
-              src={appImg}
-              alt="Three screens of the Quest companion app — calendar home, set emotions, and set environment"
+              src={uiUxImg}
+              alt="Three screens of the Quest companion app — set emotions list, home calendar with recent setup, and environment themes"
               className="w-full h-auto object-cover"
               loading="lazy"
             />
