@@ -47,11 +47,11 @@ export const projects: Project[] = [
     title: "WINGO",
     tagline: "IoT bird deterrent system",
     description:
-      "An IoT-based product system designed to deter pest birds in urban Indian society — quiet, humane, modular.",
+      "An IoT-based product system designed to deter pest birds in urban Indian society — quiet, humane, modular. SolidWorks CAD modelling, KeyShot renderings, Arduino prototyping and coding were all done hands-on.",
     category: "Product / IoT",
-    year: "2023",
-    role: "Industrial Design, Systems",
-    tools: ["SolidWorks", "Arduino", "KeyShot"],
+    year: "2025",
+    role: "Industrial Design, CAD, Rendering, Electronics & Coding",
+    tools: ["SolidWorks", "KeyShot", "Arduino", "Coding"],
     span: "regular",
     cover:
       "linear-gradient(160deg, oklch(0.40 0.16 260) 0%, oklch(0.25 0.10 290) 100%)",
