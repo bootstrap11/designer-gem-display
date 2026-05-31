@@ -282,6 +282,14 @@ function QuestPage() {
           <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
             How a turn unfolds
           </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 mb-14">
+            <img
+              src={situationScreenImg}
+              alt="Quest board with two robot pawns mid-game, card decks and the integrated situation screen prompting the player with a multiple-choice scenario"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
           <div className="space-y-0">
             {gameplaySteps.map((step, i) => (
               <div key={step.num} className="flex gap-6 md:gap-10 group">
