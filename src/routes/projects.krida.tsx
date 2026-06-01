@@ -2,6 +2,29 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
+import screen09 from "@/assets/krida/krida-0009.jpg.asset.json";
+import screen10 from "@/assets/krida/krida-0010.jpg.asset.json";
+import screen11 from "@/assets/krida/krida-0011.jpg.asset.json";
+import screen12 from "@/assets/krida/krida-0012.jpg.asset.json";
+import screen13 from "@/assets/krida/krida-0013.jpg.asset.json";
+import screen14 from "@/assets/krida/krida-0014.jpg.asset.json";
+import screen15 from "@/assets/krida/krida-0015.jpg.asset.json";
+import screen16 from "@/assets/krida/krida-0016.jpg.asset.json";
+import screen17 from "@/assets/krida/krida-0017.jpg.asset.json";
+import screen18 from "@/assets/krida/krida-0018.jpg.asset.json";
+
+const appScreens = [
+  { src: screen09.url, caption: "Splash" },
+  { src: screen10.url, caption: "Sign Up" },
+  { src: screen11.url, caption: "Login" },
+  { src: screen12.url, caption: "Enter Details" },
+  { src: screen13.url, caption: "Fill Credentials" },
+  { src: screen14.url, caption: "Confirm Account" },
+  { src: screen15.url, caption: "Home" },
+  { src: screen16.url, caption: "Book a Venue" },
+  { src: screen17.url, caption: "Venue Details" },
+  { src: screen18.url, caption: "Booking Confirmation" },
+];
 
 export const Route = createFileRoute("/projects/krida")({
   head: () => ({
