@@ -440,6 +440,32 @@ function KridaPage() {
           </div>
         </section>
 
+        {/* App Screens */}
+        <section className="mx-auto max-w-6xl px-6 pb-24">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">App Screens</p>
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
+            A walk through the app
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {appScreens.map((s, i) => (
+              <figure key={i} className="space-y-3">
+                <div className="aspect-[9/19] rounded-3xl overflow-hidden border border-border/40 bg-card/40">
+                  <img
+                    src={s.src}
+                    alt={`KRIDA app screen — ${s.caption}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <figcaption className="flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-muted-foreground">
+                  <span className="text-foreground/60">{String(i + 1).padStart(2, "0")}</span>
+                  <span>{s.caption}</span>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+
         {/* More work */}
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <div className="flex items-end justify-between mb-8">
