@@ -2,6 +2,29 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
+import screen09 from "@/assets/krida/krida-0009.jpg.asset.json";
+import screen10 from "@/assets/krida/krida-0010.jpg.asset.json";
+import screen11 from "@/assets/krida/krida-0011.jpg.asset.json";
+import screen12 from "@/assets/krida/krida-0012.jpg.asset.json";
+import screen13 from "@/assets/krida/krida-0013.jpg.asset.json";
+import screen14 from "@/assets/krida/krida-0014.jpg.asset.json";
+import screen15 from "@/assets/krida/krida-0015.jpg.asset.json";
+import screen16 from "@/assets/krida/krida-0016.jpg.asset.json";
+import screen17 from "@/assets/krida/krida-0017.jpg.asset.json";
+import screen18 from "@/assets/krida/krida-0018.jpg.asset.json";
+
+const appScreens = [
+  { src: screen09.url, caption: "Splash" },
+  { src: screen10.url, caption: "Sign Up" },
+  { src: screen11.url, caption: "Login" },
+  { src: screen12.url, caption: "Enter Details" },
+  { src: screen13.url, caption: "Fill Credentials" },
+  { src: screen14.url, caption: "Confirm Account" },
+  { src: screen15.url, caption: "Home" },
+  { src: screen16.url, caption: "Book a Venue" },
+  { src: screen17.url, caption: "Venue Details" },
+  { src: screen18.url, caption: "Booking Confirmation" },
+];
 
 export const Route = createFileRoute("/projects/krida")({
   head: () => ({
@@ -414,6 +437,32 @@ function KridaPage() {
                 Every proposed feature is mapped to a real research finding: coordination difficulty, skill mismatch, reliance on external communication tools, and the need for recognition among active players.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* App Screens */}
+        <section className="mx-auto max-w-6xl px-6 pb-24">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">App Screens</p>
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-14">
+            A walk through the app
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {appScreens.map((s, i) => (
+              <figure key={i} className="space-y-3">
+                <div className="aspect-[9/19] rounded-3xl overflow-hidden border border-border/40 bg-card/40">
+                  <img
+                    src={s.src}
+                    alt={`KRIDA app screen — ${s.caption}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <figcaption className="flex items-center gap-3 text-xs tracking-[0.2em] uppercase text-muted-foreground">
+                  <span className="text-foreground/60">{String(i + 1).padStart(2, "0")}</span>
+                  <span>{s.caption}</span>
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </section>
 
