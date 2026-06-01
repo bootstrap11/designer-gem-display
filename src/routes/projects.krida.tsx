@@ -12,6 +12,12 @@ import screen15 from "@/assets/krida/krida-0015.jpg.asset.json";
 import screen16 from "@/assets/krida/krida-0016.jpg.asset.json";
 import screen17 from "@/assets/krida/krida-0017.jpg.asset.json";
 import screen18 from "@/assets/krida/krida-0018.jpg.asset.json";
+import screen19 from "@/assets/krida/krida-0019.jpg.asset.json";
+import screen20 from "@/assets/krida/krida-0020.jpg.asset.json";
+import screen21 from "@/assets/krida/krida-0021.jpg.asset.json";
+import screen22 from "@/assets/krida/krida-0022.jpg.asset.json";
+import screen23 from "@/assets/krida/krida-0023.jpg.asset.json";
+import screen24 from "@/assets/krida/krida-0024.jpg.asset.json";
 
 const appScreens = [
   { src: screen09.url, caption: "Splash" },
@@ -24,6 +30,12 @@ const appScreens = [
   { src: screen16.url, caption: "Book a Venue" },
   { src: screen17.url, caption: "Venue Details" },
   { src: screen18.url, caption: "Booking Confirmation" },
+  { src: screen19.url, caption: "Search & Filters" },
+  { src: screen20.url, caption: "Select Date & Slot" },
+  { src: screen21.url, caption: "Choose Courts" },
+  { src: screen22.url, caption: "Cart & Summary" },
+  { src: screen23.url, caption: "Payment Method" },
+  { src: screen24.url, caption: "Payment Success" },
 ];
 
 export const Route = createFileRoute("/projects/krida")({
