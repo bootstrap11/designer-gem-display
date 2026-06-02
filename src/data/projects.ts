@@ -32,6 +32,7 @@ export const projects: Project[] = [
     span: "tall",
     cover:
       "linear-gradient(135deg, oklch(0.45 0.20 280) 0%, oklch(0.30 0.15 320) 60%, oklch(0.20 0.10 260) 100%)",
+    hero: questCover,
   },
   {
     slug: "krida",
