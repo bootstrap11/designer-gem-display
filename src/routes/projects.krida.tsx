@@ -168,7 +168,7 @@ const homeSections = [
   { title: "Discover", desc: "Search, nearby events, upcoming events." },
 ];
 
-function KridaPage() {
+export function KridaPage() {
   const others = projects.filter((p) => p.slug !== "krida").slice(0, 3);
 
   return (
