@@ -111,7 +111,7 @@ const themes = ["Classic World", "Underwater World", "Outer Space"];
 
 const learningFocus = ["Communication", "Patience", "Empathy", "Emotional Regulation", "Responsibility"];
 
-function QuestPage() {
+export function QuestPage() {
   const others = projects.filter((p) => p.slug !== "projects-quest").slice(0, 3);
 
   return (
