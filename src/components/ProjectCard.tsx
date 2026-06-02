@@ -15,10 +15,14 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
     >
       <div
-        className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105 bg-noise"
-        style={{ background: project.cover }}
+        className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105 bg-noise bg-cover bg-center"
+        style={
+          project.hero
+            ? { backgroundImage: `url(${project.hero})` }
+            : { background: project.cover }
+        }
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/95 via-background/40 to-background/10" />
 
       <div className="absolute top-5 left-5 flex items-center gap-2 text-[11px] tracking-widest uppercase text-foreground/80">
         <span className="font-mono">{String(index + 1).padStart(2, "0")}</span>
