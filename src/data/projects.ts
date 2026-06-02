@@ -1,3 +1,6 @@
+import questCover from "@/assets/quest/board.jpeg";
+import kridaCover from "@/assets/krida/krida-0009.jpg.asset.json";
+
 export type Project = {
   slug: string;
   title: string;
@@ -9,8 +12,10 @@ export type Project = {
   tools: string[];
   /** masonry span: tall / wide / regular */
   span: "tall" | "wide" | "regular";
-  /** abstract cover gradient */
+  /** abstract cover gradient (fallback) */
   cover: string;
+  /** optional hero image url */
+  hero?: string;
 };
 
 export const projects: Project[] = [
@@ -27,6 +32,7 @@ export const projects: Project[] = [
     span: "tall",
     cover:
       "linear-gradient(135deg, oklch(0.45 0.20 280) 0%, oklch(0.30 0.15 320) 60%, oklch(0.20 0.10 260) 100%)",
+    hero: questCover,
   },
   {
     slug: "krida",
@@ -41,6 +47,7 @@ export const projects: Project[] = [
     span: "wide",
     cover:
       "linear-gradient(120deg, oklch(0.55 0.18 230) 0%, oklch(0.35 0.20 270) 50%, oklch(0.25 0.15 300) 100%)",
+    hero: kridaCover.url,
   },
   {
     slug: "wingo",
