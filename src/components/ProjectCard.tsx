@@ -8,12 +8,8 @@ const spanClass: Record<Project["span"], string> = {
 };
 
 export function ProjectCard({ project, index }: { project: Project; index: number }) {
-  return (
-    <Link
-      to="/projects/$slug"
-      params={{ slug: project.slug }}
-      className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-    >
+  const card = (
+    <>
       <div
         className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-105 bg-noise bg-cover bg-center"
         style={
@@ -42,6 +38,38 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           <span aria-hidden>→</span>
         </div>
       </div>
+    </>
+  );
+
+  if (project.slug === "krida") {
+    return (
+      <Link
+        to="/projects/krida"
+        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
+      >
+        {card}
+      </Link>
+    );
+  }
+
+  if (project.slug === "projects-quest") {
+    return (
+      <Link
+        to="/projects/projects-quest"
+        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
+      >
+        {card}
+      </Link>
+    );
+  }
+
+  return (
+    <Link
+      to="/projects/$slug"
+      params={{ slug: project.slug }}
+      className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
+    >
+      {card}
     </Link>
   );
 }
