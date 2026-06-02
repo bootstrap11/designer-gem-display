@@ -1,3 +1,6 @@
+import questCover from "@/assets/quest/board.jpeg";
+import kridaCover from "@/assets/krida/krida-0009.jpg.asset.json";
+
 export type Project = {
   slug: string;
   title: string;
@@ -9,8 +12,10 @@ export type Project = {
   tools: string[];
   /** masonry span: tall / wide / regular */
   span: "tall" | "wide" | "regular";
-  /** abstract cover gradient */
+  /** abstract cover gradient (fallback) */
   cover: string;
+  /** optional hero image url */
+  hero?: string;
 };
 
 export const projects: Project[] = [
