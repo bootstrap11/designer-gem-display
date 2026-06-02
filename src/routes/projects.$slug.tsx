@@ -2,8 +2,6 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { getProject, projects } from "@/data/projects";
-import { KridaPage } from "@/routes/projects.krida";
-import { QuestPage } from "@/routes/projects.projects-quest";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
@@ -45,9 +43,6 @@ export const Route = createFileRoute("/projects/$slug")({
 function ProjectPage() {
   const { project } = Route.useLoaderData();
   const others = projects.filter((p) => p.slug !== project.slug).slice(0, 3);
-
-  if (project.slug === "krida") return <KridaPage />;
-  if (project.slug === "projects-quest") return <QuestPage />;
 
   return (
     <div className="min-h-screen">
