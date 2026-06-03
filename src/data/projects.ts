@@ -1,5 +1,5 @@
-import questCover from "@/assets/quest/board.jpeg";
-import kridaCover from "@/assets/krida/krida-0009.jpg.asset.json";
+const questCover = "/quest/board.jpeg";
+const kridaCover = { url: "/krida/krida-0009.jpg" };
 
 export type Project = {
   slug: string;
