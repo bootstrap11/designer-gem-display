@@ -2,19 +2,19 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
-import boardImg from "@/assets/quest/board.jpeg";
-import appImg from "@/assets/quest/app.jpeg";
-import cardsImg from "@/assets/quest/cards.jpeg";
-import cardsBacksImg from "@/assets/quest/cards-backs.jpeg";
-import cardsChallengeImg from "@/assets/quest/cards-challenge.jpeg";
-import kidsPlayingImg from "@/assets/quest/kids-playing.jpeg";
-import zonesImg from "@/assets/quest/zones.jpeg";
-import robotEmotionImg from "@/assets/quest/robot-emotion.jpeg";
-import robotIdeationsImg from "@/assets/quest/robot-ideations.jpeg";
-import robotViewImg from "@/assets/quest/robot-view.jpeg";
-import robotTrioImg from "@/assets/quest/robot-trio.jpeg";
-import situationScreenImg from "@/assets/quest/situation-screen.jpeg";
-import uiUxImg from "@/assets/quest/ui-ux.jpeg";
+const boardImg = "/quest/board.jpeg";
+const appImg = "/quest/app.jpeg";
+const cardsImg = "/quest/cards.jpeg";
+const cardsBacksImg = "/quest/cards-backs.jpeg";
+const cardsChallengeImg = "/quest/cards-challenge.jpeg";
+const kidsPlayingImg = "/quest/kids-playing.jpeg";
+const zonesImg = "/quest/zones.jpeg";
+const robotEmotionImg = "/quest/robot-emotion.jpeg";
+const robotIdeationsImg = "/quest/robot-ideations.jpeg";
+const robotViewImg = "/quest/robot-view.jpeg";
+const robotTrioImg = "/quest/robot-trio.jpeg";
+const situationScreenImg = "/quest/situation-screen.jpeg";
+const uiUxImg = "/quest/ui-ux.jpeg";
 
 export const Route = createFileRoute("/projects/projects-quest")({
   head: () => ({
