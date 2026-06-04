@@ -1,5 +1,6 @@
 const questCover = "/quest/board.jpeg";
 const kridaCover = { url: "/krida/krida-0009.jpg" };
+const lumosCover = "/lumos/cover.jpg";
 
 export type Project = {
   slug: string;
@@ -48,6 +49,21 @@ export const projects: Project[] = [
     cover:
       "linear-gradient(120deg, oklch(0.55 0.18 230) 0%, oklch(0.35 0.20 270) 50%, oklch(0.25 0.15 300) 100%)",
     hero: kridaCover.url,
+  },
+  {
+    slug: "lumos",
+    title: "LUMOS",
+    tagline: "The Radiating Cage — shadow as form",
+    description:
+      "A table lamp built from 25 hand-twisted 4.5 mm aluminium rods arranged in a radial cage between a wooden base and cap — designed so the projected shadow becomes the primary form.",
+    category: "Product / Light",
+    year: "2025",
+    role: "Material Exploration, Manual Making, Fabrication",
+    tools: ["Aluminium Rods", "Wood Joinery", "Hand Twisting", "Buffing"],
+    span: "wide",
+    cover:
+      "linear-gradient(135deg, oklch(0.30 0.08 80) 0%, oklch(0.18 0.04 60) 60%, oklch(0.12 0.02 40) 100%)",
+    hero: lumosCover,
   },
   {
     slug: "wingo",

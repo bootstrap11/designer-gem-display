@@ -63,6 +63,17 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
     );
   }
 
+  if (project.slug === "lumos") {
+    return (
+      <Link
+        to="/projects/lumos"
+        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
+      >
+        {card}
+      </Link>
+    );
+  }
+
   return (
     <Link
       to="/projects/$slug"
