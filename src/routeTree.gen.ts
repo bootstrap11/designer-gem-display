@@ -14,6 +14,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
+import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
 import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
 
@@ -42,6 +43,11 @@ const ProjectsProjectsQuestRoute = ProjectsProjectsQuestRouteImport.update({
   path: '/projects/projects-quest',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsLumosRoute = ProjectsLumosRouteImport.update({
+  id: '/projects/lumos',
+  path: '/projects/lumos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjectsKridaRoute = ProjectsKridaRouteImport.update({
   id: '/projects/krida',
   path: '/projects/krida',
@@ -60,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/krida': typeof ProjectsKridaRoute
+  '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +76,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/krida': typeof ProjectsKridaRoute
+  '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
 }
 export interface FileRoutesById {
@@ -79,6 +87,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/krida': typeof ProjectsKridaRoute
+  '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +99,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/projects/$slug'
     | '/projects/krida'
+    | '/projects/lumos'
     | '/projects/projects-quest'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +109,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/projects/$slug'
     | '/projects/krida'
+    | '/projects/lumos'
     | '/projects/projects-quest'
   id:
     | '__root__'
@@ -108,6 +119,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/projects/$slug'
     | '/projects/krida'
+    | '/projects/lumos'
     | '/projects/projects-quest'
   fileRoutesById: FileRoutesById
 }
@@ -118,6 +130,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
   ProjectsKridaRoute: typeof ProjectsKridaRoute
+  ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
 }
 
@@ -158,6 +171,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsProjectsQuestRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/lumos': {
+      id: '/projects/lumos'
+      path: '/projects/lumos'
+      fullPath: '/projects/lumos'
+      preLoaderRoute: typeof ProjectsLumosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/krida': {
       id: '/projects/krida'
       path: '/projects/krida'
@@ -182,6 +202,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
   ProjectsKridaRoute: ProjectsKridaRoute,
+  ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,
 }
 export const routeTree = rootRouteImport
