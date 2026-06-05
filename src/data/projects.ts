@@ -22,7 +22,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     slug: "projects-quest",
-    title: "Projects Quest",
+    title: "Quest",
     tagline: "Interactive social learning board game",
     description:
       "A physical board game that teaches children social behaviour through decisions, actions, and emotional feedback loops.",
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Industrial Design, CAD, Rendering, Electronics & Coding",
     tools: ["SolidWorks", "KeyShot", "Arduino", "Coding"],
-    span: "tall",
+    span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.45 0.20 280) 0%, oklch(0.30 0.15 320) 60%, oklch(0.20 0.10 260) 100%)",
     hero: questCover,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Research, Wireframes, Visual Design",
     tools: ["Figma", "User Interviews", "Prototyping"],
-    span: "wide",
+    span: "regular",
     cover:
       "linear-gradient(120deg, oklch(0.55 0.18 230) 0%, oklch(0.35 0.20 270) 50%, oklch(0.25 0.15 300) 100%)",
     hero: kridaCover.url,
