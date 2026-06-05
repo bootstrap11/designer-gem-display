@@ -16,6 +16,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
 import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
+import { Route as ProjectsExhibitionDisplayRouteImport } from './routes/projects.exhibition-display'
 import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -53,6 +54,12 @@ const ProjectsKridaRoute = ProjectsKridaRouteImport.update({
   path: '/projects/krida',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsExhibitionDisplayRoute =
+  ProjectsExhibitionDisplayRouteImport.update({
+    id: '/projects/exhibition-display',
+    path: '/projects/exhibition-display',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ProjectsSlugRoute = ProjectsSlugRouteImport.update({
   id: '/projects/$slug',
   path: '/projects/$slug',
@@ -65,6 +72,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
+  '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -75,6 +83,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
+  '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -86,6 +95,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
+  '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/sitemap.xml'
     | '/projects/$slug'
+    | '/projects/exhibition-display'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -108,6 +119,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/sitemap.xml'
     | '/projects/$slug'
+    | '/projects/exhibition-display'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -118,6 +130,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/sitemap.xml'
     | '/projects/$slug'
+    | '/projects/exhibition-display'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -129,6 +142,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
+  ProjectsExhibitionDisplayRoute: typeof ProjectsExhibitionDisplayRoute
   ProjectsKridaRoute: typeof ProjectsKridaRoute
   ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
@@ -185,6 +199,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsKridaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/exhibition-display': {
+      id: '/projects/exhibition-display'
+      path: '/projects/exhibition-display'
+      fullPath: '/projects/exhibition-display'
+      preLoaderRoute: typeof ProjectsExhibitionDisplayRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/$slug': {
       id: '/projects/$slug'
       path: '/projects/$slug'
@@ -201,6 +222,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
+  ProjectsExhibitionDisplayRoute: ProjectsExhibitionDisplayRoute,
   ProjectsKridaRoute: ProjectsKridaRoute,
   ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,
