@@ -1,6 +1,7 @@
 const questCover = "/quest/board.jpeg";
 const kridaCover = { url: "/krida/krida-0009.jpg" };
 const lumosCover = "/lumos/cover.jpg";
+const exhibitionCover = "/exhibition/display.png";
 
 export type Project = {
   slug: string;
@@ -64,6 +65,21 @@ export const projects: Project[] = [
     cover:
       "linear-gradient(135deg, oklch(0.30 0.08 80) 0%, oklch(0.18 0.04 60) 60%, oklch(0.12 0.02 40) 100%)",
     hero: lumosCover,
+  },
+  {
+    slug: "exhibition-display",
+    title: "Collapsible Display",
+    tagline: "Modular kinetic exhibition structure",
+    description:
+      "A collapsible, reconfigurable exhibition display system — modular, deployable, and inspired by phyllotaxis-driven curling spiral geometry.",
+    category: "Exhibition Design",
+    year: "2025",
+    role: "Concept, Prototyping, CAD, Fabrication",
+    tools: ["Paper", "Acrylic", "Sunboard", "MDF", "Laser Cutter", "CAD"],
+    span: "wide",
+    cover:
+      "linear-gradient(135deg, oklch(0.45 0.10 60) 0%, oklch(0.28 0.06 40) 60%, oklch(0.18 0.04 30) 100%)",
+    hero: exhibitionCover,
   },
   {
     slug: "wingo",
