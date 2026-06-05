@@ -214,7 +214,7 @@ function LumosPage() {
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <h2 className="font-serif text-4xl mb-6">Technical Configuration</h2>
           <div className="overflow-hidden rounded-2xl border border-border/40 bg-background p-6">
-            <img src="/lumos/technical-drawing.svg" alt="Technical drawing of LUMOS lamp" className="w-full h-auto block" loading="lazy" />
+            <img src="/lumos/technical-drawing.png" alt="Technical drawing of LUMOS lamp" className="w-full h-auto block" loading="lazy" />
           </div>
         </section>
 
