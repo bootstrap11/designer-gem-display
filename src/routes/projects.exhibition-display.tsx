@@ -79,20 +79,6 @@ const layouts = [
   "Multi-segment spatial configuration",
 ];
 
-const dimensions = [
-  "860 mm",
-  "709.28 mm",
-  "620.99 mm",
-  "650.00 mm",
-  "998.99 mm",
-  "712.75 mm",
-  "843.00 mm",
-  "222.75 mm",
-  "420.00 mm",
-  "716.68 mm",
-  "1004.49 mm",
-  "422.31 mm",
-];
 
 function ExhibitionPage() {
   return (
@@ -340,16 +326,6 @@ function ExhibitionPage() {
             </div>
             <div className="overflow-hidden rounded-2xl border border-border/40 bg-background p-4">
               <img src="/exhibition/technical_drawing.png" alt="Technical drawing — hinge knuckle and panel dimensions" className="block w-full h-auto" />
-            </div>
-          </div>
-          <div className="mt-8">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Key Panel Dimensions</p>
-            <div className="flex flex-wrap gap-2">
-              {dimensions.map((d) => (
-                <span key={d} className="rounded-full border border-border/60 px-3 py-1 text-xs font-mono">{d}</span>
-              ))}
-              <span className="rounded-full border border-border/60 px-3 py-1 text-xs font-mono">84°</span>
-              <span className="rounded-full border border-border/60 px-3 py-1 text-xs font-mono">96°</span>
             </div>
           </div>
         </section>
