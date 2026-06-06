@@ -241,9 +241,29 @@ function ExhibitionPage() {
           </ul>
         </section>
 
+        {/* Fabrication Process */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <h2 className="font-serif text-4xl mb-8">Fabrication Process</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <img src="/exhibition/process_extra.png" alt="Marking MDF panels and laser cutting hinge components" className="block w-full h-auto rounded-2xl border border-border/40 bg-background" />
+            <img src="/exhibition/process_2.png" alt="Assembled MDF frame with integrated hinges in the workshop" className="block w-full h-auto rounded-2xl border border-border/40 bg-background object-cover" />
+          </div>
+          <p className="mt-6 max-w-3xl text-sm text-muted-foreground">
+            Panels were marked and routed from 9 mm MDF; interlocking hinge knuckles and grooves were laser-cut and integrated directly into the panel edges before workshop assembly.
+          </p>
+        </section>
+
         {/* Layouts */}
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <h2 className="font-serif text-4xl mb-8">Layout Configurations</h2>
+          <div className="grid gap-6 md:grid-cols-2 mb-8">
+            <div className="overflow-hidden rounded-2xl border border-border/40 bg-background p-4">
+              <img src="/exhibition/layouting.png" alt="Plan view layouts — hexagonal enclosure, modular segments and visitor circulation" className="block w-full h-auto" />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-border/40 bg-background p-4">
+              <img src="/exhibition/layouting_2.png" alt="Spatial configurations — radial, linear, zig-zag and semi-circular arrangements" className="block w-full h-auto" />
+            </div>
+          </div>
           <div className="grid gap-3 md:grid-cols-3">
             {layouts.map((l, i) => (
               <div key={l} className="rounded-xl border border-border/40 p-5">
@@ -253,6 +273,22 @@ function ExhibitionPage() {
             ))}
           </div>
         </section>
+
+        {/* Rejected Alternatives */}
+        <section className="mx-auto max-w-6xl px-6 pb-20 grid gap-10 md:grid-cols-2 items-center">
+          <div className="overflow-hidden rounded-2xl border border-border/40 bg-background">
+            <img src="/exhibition/rejected_alternatves.png" alt="Rejected alternatives — kerf-cut plywood bend and bolted ball-joint" className="block w-full h-auto" />
+          </div>
+          <div>
+            <h2 className="font-serif text-4xl">Rejected Alternatives</h2>
+            <p className="mt-5 text-muted-foreground">
+              <strong className="text-foreground">Kerf cutting</strong> bent thin plywood elegantly but turned brittle in 9 mm MDF and could not hold a state-lock at full scale.
+              An external <strong className="text-foreground">bolted ball-and-socket</strong> joint articulated well but visually interrupted the spiral language and required exposed hardware at every junction.
+              Both pushed the project toward the integrated interlocking knuckle hinge.
+            </p>
+          </div>
+        </section>
+
 
         {/* Structural Analysis & Solution */}
         <section className="mx-auto max-w-6xl px-6 pb-20 grid gap-10 md:grid-cols-2">
