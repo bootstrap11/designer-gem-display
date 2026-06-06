@@ -50,7 +50,7 @@ const prototypes = [
   {
     n: "01",
     name: "180 GSM Paper",
-    img: "/exhibition/Case_study.png",
+    img: "/exhibition/quick_prototyping.png",
     body:
       "Rapid iteration with masking tape. Verified the mathematical curve and served as proof-of-concept.",
   },
