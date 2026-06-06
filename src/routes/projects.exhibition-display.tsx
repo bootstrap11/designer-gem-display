@@ -328,16 +328,6 @@ function ExhibitionPage() {
               <img src="/exhibition/technical_drawing.png" alt="Technical drawing — hinge knuckle and panel dimensions" className="block w-full h-auto" />
             </div>
           </div>
-          <div className="mt-8">
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Key Panel Dimensions</p>
-            <div className="flex flex-wrap gap-2">
-              {dimensions.map((d) => (
-                <span key={d} className="rounded-full border border-border/60 px-3 py-1 text-xs font-mono">{d}</span>
-              ))}
-              <span className="rounded-full border border-border/60 px-3 py-1 text-xs font-mono">84°</span>
-              <span className="rounded-full border border-border/60 px-3 py-1 text-xs font-mono">96°</span>
-            </div>
-          </div>
         </section>
 
         {/* Ergonomics */}
