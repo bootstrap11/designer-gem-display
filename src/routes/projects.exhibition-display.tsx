@@ -185,13 +185,10 @@ function ExhibitionPage() {
           <h2 className="font-serif text-4xl mb-8">Prototyping</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {prototypes.map((p) => (
-              <div key={p.n} className="rounded-2xl border border-border/40 overflow-hidden">
-                <img src={p.img} alt={p.name} className="block w-full aspect-[4/3] object-cover bg-muted" />
-                <div className="p-5">
-                  <p className="text-xs font-mono text-muted-foreground">{p.n}</p>
-                  <h3 className="font-serif text-xl mt-1">{p.name}</h3>
-                  <p className="mt-3 text-sm text-muted-foreground">{p.body}</p>
-                </div>
+              <div key={p.n} className="rounded-2xl border border-border/40 p-5">
+                <p className="text-xs font-mono text-muted-foreground">{p.n}</p>
+                <h3 className="font-serif text-xl mt-1">{p.name}</h3>
+                <p className="mt-3 text-sm text-muted-foreground">{p.body}</p>
               </div>
             ))}
           </div>
