@@ -334,8 +334,13 @@ function ExhibitionPage() {
         {/* CAD */}
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <h2 className="font-serif text-4xl mb-8">CAD Development</h2>
-          <div className="overflow-hidden rounded-2xl border border-border/40 bg-card">
-            <img src="/exhibition/cad_model.png" alt="CAD model — folded, intermediate, fully open states" className="block w-full h-auto" />
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="overflow-hidden rounded-2xl border border-border/40 bg-card">
+              <img src="/exhibition/cad_model.png" alt="CAD model — folded, intermediate, fully open states" className="block w-full h-auto" />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-border/40 bg-background p-4">
+              <img src="/exhibition/technical_drawing.png" alt="Technical drawing — hinge knuckle and panel dimensions" className="block w-full h-auto" />
+            </div>
           </div>
           <div className="mt-8">
             <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Key Panel Dimensions</p>
