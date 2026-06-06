@@ -315,7 +315,7 @@ function ExhibitionPage() {
         {/* Joinery */}
         <section className="mx-auto max-w-6xl px-6 pb-20 grid gap-10 md:grid-cols-2 items-center">
           <div className="overflow-hidden rounded-2xl border border-border/40 bg-background">
-            <img src="/exhibition/joinery_cad.png" alt="Interlocking joinery CAD detail" className="block w-full h-auto" />
+            <img src="/exhibition/joinery.png" alt="Hinge knuckle, groove and interlocking knuckle hinge — dimensioned drawings and 3D detail" className="block w-full h-auto" />
           </div>
           <div>
             <h2 className="font-serif text-4xl">Custom Interlocking Hinge</h2>
