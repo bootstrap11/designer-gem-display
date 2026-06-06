@@ -79,20 +79,6 @@ const layouts = [
   "Multi-segment spatial configuration",
 ];
 
-const dimensions = [
-  "860 mm",
-  "709.28 mm",
-  "620.99 mm",
-  "650.00 mm",
-  "998.99 mm",
-  "712.75 mm",
-  "843.00 mm",
-  "222.75 mm",
-  "420.00 mm",
-  "716.68 mm",
-  "1004.49 mm",
-  "422.31 mm",
-];
 
 function ExhibitionPage() {
   return (
