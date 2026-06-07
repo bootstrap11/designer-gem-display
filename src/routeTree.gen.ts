@@ -13,6 +13,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProjectsWingoRouteImport } from './routes/projects.wingo'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
 import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
@@ -37,6 +38,11 @@ const AboutRoute = AboutRouteImport.update({
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsWingoRoute = ProjectsWingoRouteImport.update({
+  id: '/projects/wingo',
+  path: '/projects/wingo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProjectsProjectsQuestRoute = ProjectsProjectsQuestRouteImport.update({
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
+  '/projects/wingo': typeof ProjectsWingoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -87,6 +94,7 @@ export interface FileRoutesByTo {
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
+  '/projects/wingo': typeof ProjectsWingoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -99,6 +107,7 @@ export interface FileRoutesById {
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
+  '/projects/wingo': typeof ProjectsWingoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -112,6 +121,7 @@ export interface FileRouteTypes {
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
+    | '/projects/wingo'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -123,6 +133,7 @@ export interface FileRouteTypes {
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
+    | '/projects/wingo'
   id:
     | '__root__'
     | '/'
@@ -134,6 +145,7 @@ export interface FileRouteTypes {
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
+    | '/projects/wingo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -146,6 +158,7 @@ export interface RootRouteChildren {
   ProjectsKridaRoute: typeof ProjectsKridaRoute
   ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
+  ProjectsWingoRoute: typeof ProjectsWingoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -176,6 +189,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/wingo': {
+      id: '/projects/wingo'
+      path: '/projects/wingo'
+      fullPath: '/projects/wingo'
+      preLoaderRoute: typeof ProjectsWingoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects/projects-quest': {
@@ -226,7 +246,18 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectsKridaRoute: ProjectsKridaRoute,
   ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,
+  ProjectsWingoRoute: ProjectsWingoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
