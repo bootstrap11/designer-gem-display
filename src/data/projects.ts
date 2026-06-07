@@ -91,9 +91,10 @@ export const projects: Project[] = [
     year: "2025",
     role: "Industrial Design, CAD, Rendering, Electronics & Coding",
     tools: ["SolidWorks", "KeyShot", "Arduino", "Coding"],
-    span: "regular",
+    span: "wide",
     cover:
       "linear-gradient(160deg, oklch(0.40 0.16 260) 0%, oklch(0.25 0.10 290) 100%)",
+    hero: "/wingo/Renders.png",
   },
   {
     slug: "freezease",
