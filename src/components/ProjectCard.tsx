@@ -7,7 +7,7 @@ const spanClass: Record<Project["span"], string> = {
   regular: "aspect-[4/3]",
 };
 
-export function ProjectCard({ project, index }: { project: Project; index: number }) {
+export function ProjectCard({ project, index, uniform }: { project: Project; index: number; uniform?: boolean }) {
   const card = (
     <>
       <div
@@ -41,12 +41,13 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
     </>
   );
 
+  const cardClass = uniform
+    ? "group relative block overflow-hidden rounded-2xl border border-border/40 aspect-[4/3]"
+    : `group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`;
+
   if (project.slug === "krida") {
     return (
-      <Link
-        to="/projects/krida"
-        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-      >
+      <Link to="/projects/krida" className={cardClass}>
         {card}
       </Link>
     );
@@ -54,10 +55,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
 
   if (project.slug === "projects-quest") {
     return (
-      <Link
-        to="/projects/projects-quest"
-        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-      >
+      <Link to="/projects/projects-quest" className={cardClass}>
         {card}
       </Link>
     );
@@ -65,10 +63,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
 
   if (project.slug === "lumos") {
     return (
-      <Link
-        to="/projects/lumos"
-        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-      >
+      <Link to="/projects/lumos" className={cardClass}>
         {card}
       </Link>
     );
@@ -76,10 +71,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
 
   if (project.slug === "exhibition-display") {
     return (
-      <Link
-        to="/projects/exhibition-display"
-        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-      >
+      <Link to="/projects/exhibition-display" className={cardClass}>
         {card}
       </Link>
     );
@@ -87,22 +79,15 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
 
   if (project.slug === "wingo") {
     return (
-      <Link
-        to="/projects/wingo"
-        className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-      >
+      <Link to="/projects/wingo" className={cardClass}>
         {card}
       </Link>
     );
   }
 
   return (
-    <Link
-      to="/projects/$slug"
-      params={{ slug: project.slug }}
-      className={`group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`}
-    >
+    <Link to="/projects/$slug" params={{ slug: project.slug }} className={cardClass}>
       {card}
-    </Link>
+      </Link>
   );
 }

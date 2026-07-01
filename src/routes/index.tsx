@@ -75,9 +75,9 @@ function Index() {
 
       {/* Work masonry */}
       <section id="work" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 auto-rows-[minmax(0,1fr)]">
+        <div className="grid grid-cols-2 gap-3">
           {projects.map((p, i) => (
-            <ProjectCard key={p.slug} project={p} index={i} />
+            <ProjectCard key={p.slug} project={p} index={i} uniform />
           ))}
         </div>
       </section>
