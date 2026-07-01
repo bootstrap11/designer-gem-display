@@ -258,26 +258,15 @@ function ExhibitionPage() {
 
 
 
-        {/* Structural Analysis & Solution */}
-        <section className="mx-auto max-w-6xl px-6 pb-20 grid gap-10 md:grid-cols-2">
-          <div>
-            <h2 className="font-serif text-4xl">Structural Analysis</h2>
-            <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
-              <li><span className="text-foreground">Structural Integrity — </span>Existing hinges work on 3 mm MDF but not on the 9 mm industrial panels needed for the final structure.</li>
-              <li><span className="text-foreground">Aesthetic Disruption — </span>External hinges interrupt the clean visual language and distract from the spiral geometry.</li>
-              <li><span className="text-foreground">Unintended Kineticism — </span>Prototype lacked a state-lock and could shift when touched — a safety concern at scale.</li>
-              <li><span className="text-foreground">Rejected: Kerf Cutting — </span>9 mm MDF becomes brittle, cannot support a 5.7 ft structure, and offers no state-lock.</li>
-            </ul>
-          </div>
-          <div>
-            <h2 className="font-serif text-4xl">Proposed Solution</h2>
-            <p className="mt-6 text-muted-foreground">
-              <strong className="text-foreground">Ball-and-socket joinery</strong> with an integrated friction lock.
-              Multi-directional articulation enables easier assembly of C- and S-curves at industrial scale.
-              The socket is slightly smaller than the ball: pulling the tension cable seats the ball deeper,
-              tightening the joint and creating a mechanical state-lock that prevents unintended movement.
-            </p>
-          </div>
+        {/* Structural Analysis */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <h2 className="font-serif text-4xl">Structural Analysis</h2>
+          <ul className="mt-6 space-y-4 text-sm text-muted-foreground max-w-3xl">
+            <li><span className="text-foreground">Structural Integrity — </span>Existing hinges work on 3 mm MDF but not on the 9 mm industrial panels needed for the final structure.</li>
+            <li><span className="text-foreground">Aesthetic Disruption — </span>External hinges interrupt the clean visual language and distract from the spiral geometry.</li>
+            <li><span className="text-foreground">Unintended Kineticism — </span>Prototype lacked a state-lock and could shift when touched — a safety concern at scale.</li>
+            <li><span className="text-foreground">Rejected: Kerf Cutting — </span>9 mm MDF becomes brittle, cannot support a 5.7 ft structure, and offers no state-lock.</li>
+          </ul>
         </section>
 
         {/* Joinery */}
