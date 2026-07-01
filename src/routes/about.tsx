@@ -36,14 +36,19 @@ const languages = ["English", "Hindi", "Gujarati"];
 
 const experience = [
   {
-    role: "Furniture Design Intern",
-    org: "Parin Furniture Limited, Rajkot",
-    period: "May – June 2025",
+    role: "Product Design Intern",
+    org: "Makers Asylum, Goa",
+    period: "May – June 2026",
   },
   {
     role: "PR Head",
     org: "REDO Design Fest, IDNU, Nirma University",
     period: "March 2026",
+  },
+  {
+    role: "Furniture Design Intern",
+    org: "Parin Furniture Limited, Rajkot",
+    period: "May – June 2025",
   },
   {
     role: "Student Sports Coordinator (SAC)",
