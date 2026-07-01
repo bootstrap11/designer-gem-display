@@ -7,7 +7,7 @@ const spanClass: Record<Project["span"], string> = {
   regular: "aspect-[4/3]",
 };
 
-export function ProjectCard({ project, index }: { project: Project; index: number }) {
+export function ProjectCard({ project, index, uniform }: { project: Project; index: number; uniform?: boolean }) {
   const card = (
     <>
       <div
