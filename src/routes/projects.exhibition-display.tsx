@@ -213,8 +213,7 @@ function ExhibitionPage() {
         {/* High Fidelity */}
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <h2 className="font-serif text-4xl mb-8">High-Fidelity MDF Prototype</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            <img src="/exhibition/high_fidelity_prototyping.png" alt="Laser cutting MDF" className="block w-full rounded-2xl border border-border/40" />
+          <div>
             <img src="/exhibition/high_fidelity_prototyping_1.png" alt="MDF prototype iterations" className="block w-full rounded-2xl border border-border/40" />
           </div>
           <ul className="mt-8 grid gap-4 md:grid-cols-3 text-sm text-muted-foreground">
