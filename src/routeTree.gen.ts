@@ -14,6 +14,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ProjectsWingoRouteImport } from './routes/projects.wingo'
+import { Route as ProjectsVenaRouteImport } from './routes/projects.vena'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
 import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
@@ -43,6 +44,11 @@ const IndexRoute = IndexRouteImport.update({
 const ProjectsWingoRoute = ProjectsWingoRouteImport.update({
   id: '/projects/wingo',
   path: '/projects/wingo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProjectsVenaRoute = ProjectsVenaRouteImport.update({
+  id: '/projects/vena',
+  path: '/projects/vena',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProjectsProjectsQuestRoute = ProjectsProjectsQuestRouteImport.update({
@@ -82,6 +88,7 @@ export interface FileRoutesByFullPath {
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
+  '/projects/vena': typeof ProjectsVenaRoute
   '/projects/wingo': typeof ProjectsWingoRoute
 }
 export interface FileRoutesByTo {
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
+  '/projects/vena': typeof ProjectsVenaRoute
   '/projects/wingo': typeof ProjectsWingoRoute
 }
 export interface FileRoutesById {
@@ -107,6 +115,7 @@ export interface FileRoutesById {
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
+  '/projects/vena': typeof ProjectsVenaRoute
   '/projects/wingo': typeof ProjectsWingoRoute
 }
 export interface FileRouteTypes {
@@ -121,6 +130,7 @@ export interface FileRouteTypes {
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
+    | '/projects/vena'
     | '/projects/wingo'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -133,6 +143,7 @@ export interface FileRouteTypes {
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
+    | '/projects/vena'
     | '/projects/wingo'
   id:
     | '__root__'
@@ -145,6 +156,7 @@ export interface FileRouteTypes {
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
+    | '/projects/vena'
     | '/projects/wingo'
   fileRoutesById: FileRoutesById
 }
@@ -158,6 +170,7 @@ export interface RootRouteChildren {
   ProjectsKridaRoute: typeof ProjectsKridaRoute
   ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
+  ProjectsVenaRoute: typeof ProjectsVenaRoute
   ProjectsWingoRoute: typeof ProjectsWingoRoute
 }
 
@@ -196,6 +209,13 @@ declare module '@tanstack/react-router' {
       path: '/projects/wingo'
       fullPath: '/projects/wingo'
       preLoaderRoute: typeof ProjectsWingoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/projects/vena': {
+      id: '/projects/vena'
+      path: '/projects/vena'
+      fullPath: '/projects/vena'
+      preLoaderRoute: typeof ProjectsVenaRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/projects/projects-quest': {
@@ -246,6 +266,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectsKridaRoute: ProjectsKridaRoute,
   ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,
+  ProjectsVenaRoute: ProjectsVenaRoute,
   ProjectsWingoRoute: ProjectsWingoRoute,
 }
 export const routeTree = rootRouteImport
