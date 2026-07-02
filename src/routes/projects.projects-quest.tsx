@@ -533,6 +533,24 @@ function QuestPage() {
           </div>
         </section>
 
+        {/* Project Preview */}
+        <section className="mx-auto max-w-6xl px-6 pb-24">
+          <div className="h-px bg-border/40 mb-24" />
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-6">Project Preview</p>
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight text-balance mb-10">
+            See Quest in action
+          </h2>
+          <div className="rounded-3xl overflow-hidden border border-border/40 bg-card/40 aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/Yh2gHN7payI?rel=0"
+              title="Quest Project Preview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </section>
+
         {/* Learning Approach */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-aurora pointer-events-none opacity-50" />
