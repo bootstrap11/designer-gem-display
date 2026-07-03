@@ -11,6 +11,8 @@ import renderedConceptImg from "@/assets/vena/rendered_concept.png.asset.json";
 import productPhotoImg from "@/assets/vena/Product_photography.png.asset.json";
 import ergonomicImg from "@/assets/vena/ergonomic_evaluation.png.asset.json";
 import aqiImg from "@/assets/vena/AQI_indication.png.asset.json";
+import overviewImg from "@/assets/vena/All_about_the_product.png.asset.json";
+import finalHeroImg from "@/assets/vena/Product_photography_last_page.png.asset.json";
 
 export const Route = createFileRoute("/projects/vena")({
   head: () => ({
@@ -375,18 +377,20 @@ export default function VenaPage() {
           </div>
         </section>
 
-        {/* Specs */}
+        {/* Product Overview */}
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Product Overview</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Everything you need to know</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={overviewImg.url} alt="VENA product overview — materials, specifications, key features" className="w-full h-auto" />
+          </div>
+        </section>
+
+        {/* Final hero */}
         <section className="mx-auto max-w-6xl px-6 pb-24">
-          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Specifications</p>
-          <h2 className="mt-3 font-serif text-4xl md:text-5xl">At a glance</h2>
-          <dl className="mt-8 grid gap-x-8 gap-y-4 md:grid-cols-2 border-t border-border/50 pt-6">
-            {specs.map(([k, v]) => (
-              <div key={k} className="flex justify-between gap-6 border-b border-border/40 pb-3">
-                <dt className="text-xs tracking-widest uppercase text-muted-foreground">{k}</dt>
-                <dd className="text-right">{v}</dd>
-              </div>
-            ))}
-          </dl>
+          <div className="rounded-3xl border border-border/40 overflow-hidden">
+            <img src={finalHeroImg.url} alt="VENA — final product" className="w-full h-auto" />
+          </div>
         </section>
       </article>
 
