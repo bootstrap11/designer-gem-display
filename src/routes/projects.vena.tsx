@@ -131,20 +131,17 @@ export default function VenaPage() {
           </div>
         </section>
 
-        {/* Cover placeholder */}
+        {/* Cover */}
         <section className="mx-auto max-w-6xl px-6">
-          <div
-            className="aspect-[16/9] rounded-3xl border border-border/40 bg-noise relative overflow-hidden shadow-glow"
-            style={{
-              background:
-                "linear-gradient(135deg, oklch(0.72 0.05 90) 0%, oklch(0.55 0.06 80) 50%, oklch(0.30 0.04 60) 100%)",
-            }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/80">
-              <span>VENA · Personal Air Purifier</span>
-              <span>Biomimicry · Leaf Veins</span>
-            </div>
+          <div className="aspect-[16/9] rounded-3xl border border-border/40 overflow-hidden shadow-glow">
+            <img src={coverImg.url} alt="VENA — Nature's Flow. Purified." className="w-full h-full object-cover" />
+          </div>
+        </section>
+
+        {/* Concept intro */}
+        <section className="mx-auto max-w-6xl px-6 mt-10">
+          <div className="aspect-[16/9] rounded-3xl border border-border/40 overflow-hidden">
+            <img src={conceptCoverImg.url} alt="Meet VENA" className="w-full h-full object-cover" />
           </div>
         </section>
 
