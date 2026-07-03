@@ -11,6 +11,8 @@ import renderedConceptImg from "@/assets/vena/rendered_concept.png.asset.json";
 import productPhotoImg from "@/assets/vena/Product_photography.png.asset.json";
 import ergonomicImg from "@/assets/vena/ergonomic_evaluation.png.asset.json";
 import aqiImg from "@/assets/vena/AQI_indication.png.asset.json";
+import overviewImg from "@/assets/vena/All_about_the_product.png.asset.json";
+import finalHeroImg from "@/assets/vena/Product_photography_last_page.png.asset.json";
 
 export const Route = createFileRoute("/projects/vena")({
   head: () => ({
