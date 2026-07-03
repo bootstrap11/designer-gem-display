@@ -205,30 +205,47 @@ export default function VenaPage() {
         </section>
 
         {/* Inspiration */}
-        <section className="mx-auto max-w-6xl px-6 pb-20 grid gap-10 md:grid-cols-2 items-start">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Inspiration</p>
-            <h2 className="mt-3 font-serif text-4xl md:text-5xl">Leaves as an engineering system</h2>
-            <p className="mt-6 text-muted-foreground">
-              Nature has iterated on efficient systems for millions of years. Leaf veins distribute
-              water and nutrients, maximize coverage, and minimize energy — all with a lightweight,
-              structural network. VENA borrows this logic as its airflow architecture.
-            </p>
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <div className="grid gap-10 md:grid-cols-2 items-start">
+            <div>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Inspiration</p>
+              <h2 className="mt-3 font-serif text-4xl md:text-5xl">Leaves as an engineering system</h2>
+              <p className="mt-6 text-muted-foreground">
+                Nature has iterated on efficient systems for millions of years. Leaf veins distribute
+                water and nutrients, maximize coverage, and minimize energy — all with a lightweight,
+                structural network. VENA borrows this logic as its airflow architecture.
+              </p>
+            </div>
+            <div className="space-y-4">
+              {principles.map((p) => (
+                <div key={p.title} className="rounded-2xl border border-border/50 p-6">
+                  <p className="font-serif text-2xl">{p.title}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    <span className="text-foreground">Observation — </span>
+                    {p.observation}
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    <span className="text-foreground">Application — </span>
+                    {p.application}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="space-y-4">
-            {principles.map((p) => (
-              <div key={p.title} className="rounded-2xl border border-border/50 p-6">
-                <p className="font-serif text-2xl">{p.title}</p>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  <span className="text-foreground">Observation — </span>
-                  {p.observation}
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  <span className="text-foreground">Application — </span>
-                  {p.application}
-                </p>
-              </div>
-            ))}
+          <div className="mt-10 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={inspirationImg.url} alt="Leaf vein inspiration references" className="w-full h-auto" />
+          </div>
+        </section>
+
+        {/* Ideation */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Ideation</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">From sketch to system</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden bg-white">
+            <img src={ideationImg.url} alt="Form and pattern ideation sketches" className="w-full h-auto" />
+          </div>
+          <div className="mt-6 rounded-3xl border border-border/40 overflow-hidden bg-white">
+            <img src={ideationConceptImg.url} alt="Selected concept — airflow and grille pattern" className="w-full h-auto" />
           </div>
         </section>
 
