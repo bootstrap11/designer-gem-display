@@ -1,6 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import coverImg from "@/assets/vena/Cover_page.png.asset.json";
+import conceptCoverImg from "@/assets/vena/Concept_coverpage.png.asset.json";
+import inspirationImg from "@/assets/vena/Inspiration.png.asset.json";
+import ideationImg from "@/assets/vena/Ideation.png.asset.json";
+import ideationConceptImg from "@/assets/vena/Ideation_concept.png.asset.json";
+import explodedImg from "@/assets/vena/Exploded_view.png.asset.json";
+import renderedConceptImg from "@/assets/vena/rendered_concept.png.asset.json";
+import productPhotoImg from "@/assets/vena/Product_photography.png.asset.json";
+import ergonomicImg from "@/assets/vena/ergonomic_evaluation.png.asset.json";
+import aqiImg from "@/assets/vena/AQI_indication.png.asset.json";
 
 export const Route = createFileRoute("/projects/vena")({
   head: () => ({
