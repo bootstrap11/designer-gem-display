@@ -1,6 +1,16 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import coverImg from "@/assets/vena/Cover_page.png.asset.json";
+import conceptCoverImg from "@/assets/vena/Concept_coverpage.png.asset.json";
+import inspirationImg from "@/assets/vena/Inspiration.png.asset.json";
+import ideationImg from "@/assets/vena/Ideation.png.asset.json";
+import ideationConceptImg from "@/assets/vena/Ideation_concept.png.asset.json";
+import explodedImg from "@/assets/vena/Exploded_view.png.asset.json";
+import renderedConceptImg from "@/assets/vena/rendered_concept.png.asset.json";
+import productPhotoImg from "@/assets/vena/Product_photography.png.asset.json";
+import ergonomicImg from "@/assets/vena/ergonomic_evaluation.png.asset.json";
+import aqiImg from "@/assets/vena/AQI_indication.png.asset.json";
 
 export const Route = createFileRoute("/projects/vena")({
   head: () => ({
@@ -121,20 +131,17 @@ export default function VenaPage() {
           </div>
         </section>
 
-        {/* Cover placeholder */}
+        {/* Cover */}
         <section className="mx-auto max-w-6xl px-6">
-          <div
-            className="aspect-[16/9] rounded-3xl border border-border/40 bg-noise relative overflow-hidden shadow-glow"
-            style={{
-              background:
-                "linear-gradient(135deg, oklch(0.72 0.05 90) 0%, oklch(0.55 0.06 80) 50%, oklch(0.30 0.04 60) 100%)",
-            }}
-          >
-            <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/80">
-              <span>VENA · Personal Air Purifier</span>
-              <span>Biomimicry · Leaf Veins</span>
-            </div>
+          <div className="aspect-[16/9] rounded-3xl border border-border/40 overflow-hidden shadow-glow">
+            <img src={coverImg.url} alt="VENA — Nature's Flow. Purified." className="w-full h-full object-cover" />
+          </div>
+        </section>
+
+        {/* Concept intro */}
+        <section className="mx-auto max-w-6xl px-6 mt-10">
+          <div className="aspect-[16/9] rounded-3xl border border-border/40 overflow-hidden">
+            <img src={conceptCoverImg.url} alt="Meet VENA" className="w-full h-full object-cover" />
           </div>
         </section>
 
@@ -198,30 +205,47 @@ export default function VenaPage() {
         </section>
 
         {/* Inspiration */}
-        <section className="mx-auto max-w-6xl px-6 pb-20 grid gap-10 md:grid-cols-2 items-start">
-          <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Inspiration</p>
-            <h2 className="mt-3 font-serif text-4xl md:text-5xl">Leaves as an engineering system</h2>
-            <p className="mt-6 text-muted-foreground">
-              Nature has iterated on efficient systems for millions of years. Leaf veins distribute
-              water and nutrients, maximize coverage, and minimize energy — all with a lightweight,
-              structural network. VENA borrows this logic as its airflow architecture.
-            </p>
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <div className="grid gap-10 md:grid-cols-2 items-start">
+            <div>
+              <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Inspiration</p>
+              <h2 className="mt-3 font-serif text-4xl md:text-5xl">Leaves as an engineering system</h2>
+              <p className="mt-6 text-muted-foreground">
+                Nature has iterated on efficient systems for millions of years. Leaf veins distribute
+                water and nutrients, maximize coverage, and minimize energy — all with a lightweight,
+                structural network. VENA borrows this logic as its airflow architecture.
+              </p>
+            </div>
+            <div className="space-y-4">
+              {principles.map((p) => (
+                <div key={p.title} className="rounded-2xl border border-border/50 p-6">
+                  <p className="font-serif text-2xl">{p.title}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    <span className="text-foreground">Observation — </span>
+                    {p.observation}
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    <span className="text-foreground">Application — </span>
+                    {p.application}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="space-y-4">
-            {principles.map((p) => (
-              <div key={p.title} className="rounded-2xl border border-border/50 p-6">
-                <p className="font-serif text-2xl">{p.title}</p>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  <span className="text-foreground">Observation — </span>
-                  {p.observation}
-                </p>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  <span className="text-foreground">Application — </span>
-                  {p.application}
-                </p>
-              </div>
-            ))}
+          <div className="mt-10 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={inspirationImg.url} alt="Leaf vein inspiration references" className="w-full h-auto" />
+          </div>
+        </section>
+
+        {/* Ideation */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Ideation</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">From sketch to system</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden bg-white">
+            <img src={ideationImg.url} alt="Form and pattern ideation sketches" className="w-full h-auto" />
+          </div>
+          <div className="mt-6 rounded-3xl border border-border/40 overflow-hidden bg-white">
+            <img src={ideationConceptImg.url} alt="Selected concept — airflow and grille pattern" className="w-full h-auto" />
           </div>
         </section>
 
@@ -229,26 +253,43 @@ export default function VenaPage() {
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Airflow Architecture</p>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">360° in, purified up</h2>
-          <div className="mt-8 grid gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border border-border/50 p-6">
-              <p className="font-serif text-2xl">Intake & Outlet</p>
-              <p className="mt-2 text-muted-foreground">
-                Air is drawn in from all sides through the lower vein-patterned grille, passed
-                through pre-filter, activated carbon and HEPA H13 media, then released vertically
-                through the top outlet as a clean-air column at the user.
-              </p>
+          <div className="mt-8 grid gap-8 md:grid-cols-[1fr_1fr] items-center">
+            <div className="rounded-3xl border border-border/40 overflow-hidden bg-white">
+              <img src={explodedImg.url} alt="VENA exploded view" className="w-full h-auto" />
             </div>
-            <div className="rounded-2xl border border-border/50 p-6">
-              <p className="font-serif text-2xl">Tool-free Maintenance</p>
-              <ol className="mt-3 list-decimal list-inside space-y-1 text-muted-foreground">
-                <li>Prepare</li>
-                <li>Unlock (20–30° twist)</li>
-                <li>Remove sleeve</li>
-                <li>Remove cartridge</li>
-                <li>Insert new cartridge</li>
-                <li>Reassemble</li>
-              </ol>
+            <div className="space-y-4">
+              <div className="rounded-2xl border border-border/50 p-6">
+                <p className="font-serif text-2xl">Intake & Outlet</p>
+                <p className="mt-2 text-muted-foreground">
+                  Air is drawn in from all sides through the lower vein-patterned grille, passed
+                  through pre-filter, activated carbon and HEPA H13 media, then released vertically
+                  through the top outlet as a clean-air column at the user.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-border/50 p-6">
+                <p className="font-serif text-2xl">Tool-free Maintenance</p>
+                <ol className="mt-3 list-decimal list-inside space-y-1 text-muted-foreground">
+                  <li>Prepare</li>
+                  <li>Unlock (20–30° twist)</li>
+                  <li>Remove sleeve</li>
+                  <li>Remove cartridge</li>
+                  <li>Insert new cartridge</li>
+                  <li>Reassemble</li>
+                </ol>
+              </div>
             </div>
+          </div>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={renderedConceptImg.url} alt="Rendered leaf-vein grille detail" className="w-full h-auto" />
+          </div>
+        </section>
+
+        {/* Ergonomics */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Ergonomic Evaluation</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Designed for daily use</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={ergonomicImg.url} alt="Ergonomic evaluation — flexible design, one touch, tool-free, portable" className="w-full h-auto" />
           </div>
         </section>
 
@@ -260,7 +301,10 @@ export default function VenaPage() {
             A single illuminated ring around the power button communicates air quality at a glance
             — no app, no numbers. It doubles as a soft ambient glow during operation.
           </p>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={aqiImg.url} alt="AQI indicator ring — green, yellow, orange, red" className="w-full h-auto" />
+          </div>
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             {aqi.map((a) => (
               <div key={a.label} className="rounded-2xl border border-border/50 p-6 flex items-center gap-4">
                 <span
@@ -273,6 +317,15 @@ export default function VenaPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Product photography */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Product Photography</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">In its natural habitat</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={productPhotoImg.url} alt="VENA on a side table" className="w-full h-auto" />
           </div>
         </section>
 
