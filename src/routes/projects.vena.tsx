@@ -253,26 +253,43 @@ export default function VenaPage() {
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Airflow Architecture</p>
           <h2 className="mt-3 font-serif text-4xl md:text-5xl">360° in, purified up</h2>
-          <div className="mt-8 grid gap-8 md:grid-cols-2">
-            <div className="rounded-2xl border border-border/50 p-6">
-              <p className="font-serif text-2xl">Intake & Outlet</p>
-              <p className="mt-2 text-muted-foreground">
-                Air is drawn in from all sides through the lower vein-patterned grille, passed
-                through pre-filter, activated carbon and HEPA H13 media, then released vertically
-                through the top outlet as a clean-air column at the user.
-              </p>
+          <div className="mt-8 grid gap-8 md:grid-cols-[1fr_1fr] items-center">
+            <div className="rounded-3xl border border-border/40 overflow-hidden bg-white">
+              <img src={explodedImg.url} alt="VENA exploded view" className="w-full h-auto" />
             </div>
-            <div className="rounded-2xl border border-border/50 p-6">
-              <p className="font-serif text-2xl">Tool-free Maintenance</p>
-              <ol className="mt-3 list-decimal list-inside space-y-1 text-muted-foreground">
-                <li>Prepare</li>
-                <li>Unlock (20–30° twist)</li>
-                <li>Remove sleeve</li>
-                <li>Remove cartridge</li>
-                <li>Insert new cartridge</li>
-                <li>Reassemble</li>
-              </ol>
+            <div className="space-y-4">
+              <div className="rounded-2xl border border-border/50 p-6">
+                <p className="font-serif text-2xl">Intake & Outlet</p>
+                <p className="mt-2 text-muted-foreground">
+                  Air is drawn in from all sides through the lower vein-patterned grille, passed
+                  through pre-filter, activated carbon and HEPA H13 media, then released vertically
+                  through the top outlet as a clean-air column at the user.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-border/50 p-6">
+                <p className="font-serif text-2xl">Tool-free Maintenance</p>
+                <ol className="mt-3 list-decimal list-inside space-y-1 text-muted-foreground">
+                  <li>Prepare</li>
+                  <li>Unlock (20–30° twist)</li>
+                  <li>Remove sleeve</li>
+                  <li>Remove cartridge</li>
+                  <li>Insert new cartridge</li>
+                  <li>Reassemble</li>
+                </ol>
+              </div>
             </div>
+          </div>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={renderedConceptImg.url} alt="Rendered leaf-vein grille detail" className="w-full h-auto" />
+          </div>
+        </section>
+
+        {/* Ergonomics */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Ergonomic Evaluation</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">Designed for daily use</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={ergonomicImg.url} alt="Ergonomic evaluation — flexible design, one touch, tool-free, portable" className="w-full h-auto" />
           </div>
         </section>
 
@@ -284,7 +301,10 @@ export default function VenaPage() {
             A single illuminated ring around the power button communicates air quality at a glance
             — no app, no numbers. It doubles as a soft ambient glow during operation.
           </p>
-          <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={aqiImg.url} alt="AQI indicator ring — green, yellow, orange, red" className="w-full h-auto" />
+          </div>
+          <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4">
             {aqi.map((a) => (
               <div key={a.label} className="rounded-2xl border border-border/50 p-6 flex items-center gap-4">
                 <span
@@ -297,6 +317,15 @@ export default function VenaPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Product photography */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Product Photography</p>
+          <h2 className="mt-3 font-serif text-4xl md:text-5xl">In its natural habitat</h2>
+          <div className="mt-8 rounded-3xl border border-border/40 overflow-hidden">
+            <img src={productPhotoImg.url} alt="VENA on a side table" className="w-full h-auto" />
           </div>
         </section>
 
