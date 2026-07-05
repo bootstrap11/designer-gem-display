@@ -198,7 +198,7 @@ function KridaPage() {
             </div>
             <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/80">
               <span>KRIDA</span>
-              <span>2024</span>
+              <span>2025</span>
             </div>
           </div>
         </section>
