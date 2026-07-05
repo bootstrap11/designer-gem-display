@@ -128,14 +128,14 @@ export const projects: Project[] = [
   },
   {
     slug: "furniture",
-    title: "Furniture Study",
+    title: "Furniture Design",
     tagline: "Form, material, hands-on fabrication",
     description:
       "A furniture design project exploring form, material, and the resistance of real materials under the hand.",
     category: "Furniture",
-    year: "2023",
+    year: "2025",
     role: "Concept, Fabrication",
-    tools: ["Wood, Metal", "Hand Tools", "Workshop"],
+    tools: ["SolidWorks", "KeyShot", "Model Making", "Material Exploration", "Woodworking", "Prototyping"],
     span: "tall",
     cover:
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
