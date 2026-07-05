@@ -29,9 +29,9 @@ export const projects: Project[] = [
     description:
       "A biomimicry-inspired personal desk air purifier designed for the IOUVA competition — leaf-vein airflow architecture, 360° intake and a single-button AQI ring.",
     category: "Product / Air Care",
-    year: "2025",
+    year: "2026",
     role: "Industrial Design, CAD, Rendering",
-    tools: ["SolidWorks", "KeyShot", "Sketching", "Biomimicry Research"],
+    tools: ["SolidWorks", "KeyShot", "Adobe Photoshop", "User Research", "Sketching", "Prototyping"],
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.75 0.05 90) 0%, oklch(0.55 0.06 80) 55%, oklch(0.28 0.04 60) 100%)",
