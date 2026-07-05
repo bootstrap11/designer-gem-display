@@ -99,7 +99,7 @@ function ExhibitionPage() {
               <span>2026</span>
             </div>
             <h1 className="mt-6 font-serif text-6xl md:text-8xl leading-[0.95] text-balance">
-              Collapsible Display Structure
+              Display & Exhibition
             </h1>
             <p className="mt-6 max-w-2xl text-xl text-muted-foreground text-pretty">
               A modular kinetic exhibition framework — deployable, reconfigurable,
