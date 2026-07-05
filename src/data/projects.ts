@@ -168,20 +168,6 @@ export const projects: Project[] = [
     cover:
       "linear-gradient(135deg, oklch(0.50 0.22 300) 0%, oklch(0.25 0.15 260) 100%)",
   },
-  {
-    slug: "paralympics-trophy",
-    title: "Paralympics Trophy",
-    tagline: "Form semantics study",
-    description:
-      "A form semantics study translating symbolism into a physical trophy design.",
-    category: "Form Study",
-    year: "2022",
-    role: "Concept, Sculpting",
-    tools: ["Clay", "Rhino", "KeyShot"],
-    span: "tall",
-    cover:
-      "linear-gradient(160deg, oklch(0.55 0.18 90) 0%, oklch(0.35 0.12 60) 40%, oklch(0.18 0.08 280) 100%)",
-  },
 ];
 
 export const getProject = (slug: string) =>
