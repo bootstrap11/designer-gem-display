@@ -123,12 +123,12 @@ function ExhibitionPage() {
         <section className="mx-auto max-w-6xl px-6 py-20 grid gap-12 md:grid-cols-[1fr_2fr]">
           <aside className="space-y-6 text-sm">
             <Field label="Category" value="Exhibition / Kinetic Structure" />
-            <Field label="Year" value="2025" />
+            <Field label="Year" value="2026" />
             <Field label="Role" value="Concept, Prototyping, CAD, Fabrication" />
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools & Materials</p>
               <ul className="flex flex-wrap gap-2">
-                {["Paper", "Acrylic", "Sunboard", "MDF", "Laser Cutter", "CAD"].map((t) => (
+                {["Adobe Illustrator", "Laser Cutting", "Model Making", "Sketching", "Exhibition Planning"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">{t}</li>
                 ))}
               </ul>
