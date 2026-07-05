@@ -170,7 +170,7 @@ function KridaPage() {
             <div className="mt-10 flex flex-wrap items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
               <span>UI / UX</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
-              <span>2024</span>
+              <span>2025</span>
             </div>
             <h1 className="mt-6 font-serif text-6xl md:text-8xl leading-[0.95] text-balance">
               KRIDA
@@ -198,7 +198,7 @@ function KridaPage() {
             </div>
             <div className="absolute bottom-6 left-6 right-6 flex justify-between text-xs tracking-widest uppercase text-foreground/80">
               <span>KRIDA</span>
-              <span>2024</span>
+              <span>2025</span>
             </div>
           </div>
         </section>
@@ -207,12 +207,12 @@ function KridaPage() {
         <section className="mx-auto max-w-6xl px-6 py-24 grid gap-16 md:grid-cols-[1fr_2fr]">
           <aside className="space-y-8 text-sm">
             <Field label="Role" value="Research, Wireframes, Visual Design" />
-            <Field label="Year" value="2024" />
+            <Field label="Year" value="2025" />
             <Field label="Category" value="UI / UX" />
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools</p>
               <ul className="flex flex-wrap gap-2">
-                {["Figma", "User Interviews", "Prototyping"].map((t) => (
+                {["Figma", "Adobe Illustrator", "Adobe Photoshop", "User Research", "User Journey Mapping", "Wireframing", "Prototyping"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">
                     {t}
                   </li>

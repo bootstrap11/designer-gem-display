@@ -96,10 +96,10 @@ function ExhibitionPage() {
             <div className="mt-10 flex flex-wrap items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
               <span>Exhibition Design</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
-              <span>2025</span>
+              <span>2026</span>
             </div>
             <h1 className="mt-6 font-serif text-6xl md:text-8xl leading-[0.95] text-balance">
-              Collapsible Display Structure
+              Display & Exhibition
             </h1>
             <p className="mt-6 max-w-2xl text-xl text-muted-foreground text-pretty">
               A modular kinetic exhibition framework — deployable, reconfigurable,
@@ -123,12 +123,12 @@ function ExhibitionPage() {
         <section className="mx-auto max-w-6xl px-6 py-20 grid gap-12 md:grid-cols-[1fr_2fr]">
           <aside className="space-y-6 text-sm">
             <Field label="Category" value="Exhibition / Kinetic Structure" />
-            <Field label="Year" value="2025" />
+            <Field label="Year" value="2026" />
             <Field label="Role" value="Concept, Prototyping, CAD, Fabrication" />
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools & Materials</p>
               <ul className="flex flex-wrap gap-2">
-                {["Paper", "Acrylic", "Sunboard", "MDF", "Laser Cutter", "CAD"].map((t) => (
+                {["Adobe Illustrator", "Laser Cutting", "Model Making", "Sketching", "Exhibition Planning"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">{t}</li>
                 ))}
               </ul>

@@ -77,7 +77,7 @@ function LumosPage() {
             <div className="mt-10 flex flex-wrap items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
               <span>Product / Light</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
-              <span>2025</span>
+              <span>2026</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
               <span>Elements of Form & Space III</span>
             </div>
@@ -114,7 +114,7 @@ function LumosPage() {
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools & Materials</p>
               <ul className="flex flex-wrap gap-2">
-                {["4.5mm Aluminium Rods", "Wood Joinery", "Hand Twisting", "Buffing", "LED"].map((t) => (
+                {["Aluminium Wire", "Hand Fabrication", "Model Making", "Sketching", "Lighting Exploration"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">
                     {t}
                   </li>

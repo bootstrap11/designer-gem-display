@@ -119,7 +119,7 @@ export default function VenaPage() {
             <div className="mt-10 flex flex-wrap items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
               <span>Product / Air Care</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
-              <span>2025</span>
+              <span>2026</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
               <span>IOUVA Competition</span>
             </div>
@@ -151,12 +151,12 @@ export default function VenaPage() {
         <section className="mx-auto max-w-6xl px-6 py-20 grid gap-16 md:grid-cols-[1fr_2fr]">
           <aside className="space-y-8 text-sm">
             <Field label="Role" value="Industrial Design, CAD, Rendering" />
-            <Field label="Year" value="2025" />
+            <Field label="Year" value="2026" />
             <Field label="Context" value="IOUVA Competition" />
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools</p>
               <ul className="flex flex-wrap gap-2">
-                {["SolidWorks", "KeyShot", "Sketching", "Biomimicry Research"].map((t) => (
+                {["SolidWorks", "KeyShot", "Adobe Photoshop", "User Research", "Sketching", "Prototyping"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">
                     {t}
                   </li>

@@ -43,9 +43,7 @@ function Index() {
             that solve <em className="italic font-serif">everyday problems</em> often unnoticed.
           </h1>
           <p className="mt-10 max-w-xl text-lg text-muted-foreground text-pretty">
-            I'm a third-year B.Des student at the Institute of Design, Nirma
-            University. For me, design goes beyond aesthetics — it's a tool to
-            address the small frictions of everyday life. Selected work below.
+            I'm Shyam Hadani, a Product and Interaction Designer. I design products, systems, and experiences through research, material exploration, and hands-on prototyping. Alongside design, I'm also exploring project management to better understand how ideas evolve into well-executed products through collaboration and structured execution.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a

@@ -29,9 +29,9 @@ export const projects: Project[] = [
     description:
       "A biomimicry-inspired personal desk air purifier designed for the IOUVA competition — leaf-vein airflow architecture, 360° intake and a single-button AQI ring.",
     category: "Product / Air Care",
-    year: "2025",
+    year: "2026",
     role: "Industrial Design, CAD, Rendering",
-    tools: ["SolidWorks", "KeyShot", "Sketching", "Biomimicry Research"],
+    tools: ["SolidWorks", "KeyShot", "Adobe Photoshop", "User Research", "Sketching", "Prototyping"],
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.75 0.05 90) 0%, oklch(0.55 0.06 80) 55%, oklch(0.28 0.04 60) 100%)",
@@ -59,9 +59,9 @@ export const projects: Project[] = [
     description:
       "A UI/UX design project for a social sports booking and player matchmaking platform.",
     category: "UI / UX",
-    year: "2024",
+    year: "2025",
     role: "Research, Wireframes, Visual Design",
-    tools: ["Figma", "User Interviews", "Prototyping"],
+    tools: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "User Research", "User Journey Mapping", "Wireframing", "Prototyping"],
     span: "regular",
     cover:
       "linear-gradient(120deg, oklch(0.55 0.18 230) 0%, oklch(0.35 0.20 270) 50%, oklch(0.25 0.15 300) 100%)",
@@ -74,9 +74,9 @@ export const projects: Project[] = [
     description:
       "A table lamp built from 25 hand-twisted 4.5 mm aluminium rods arranged in a radial cage between a wooden base and cap — designed so the projected shadow becomes the primary form.",
     category: "Product / Light",
-    year: "2025",
+    year: "2026",
     role: "Material Exploration, Manual Making, Fabrication",
-    tools: ["Aluminium Rods", "Wood Joinery", "Hand Twisting", "Buffing"],
+    tools: ["Aluminium Wire", "Hand Fabrication", "Model Making", "Sketching", "Lighting Exploration"],
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.30 0.08 80) 0%, oklch(0.18 0.04 60) 60%, oklch(0.12 0.02 40) 100%)",
@@ -84,14 +84,14 @@ export const projects: Project[] = [
   },
   {
     slug: "exhibition-display",
-    title: "Collapsible Display",
+    title: "Display & Exhibition",
     tagline: "Modular kinetic exhibition structure",
     description:
       "A collapsible, reconfigurable exhibition display system — modular, deployable, and inspired by phyllotaxis-driven curling spiral geometry.",
     category: "Exhibition Design",
-    year: "2025",
+    year: "2026",
     role: "Concept, Prototyping, CAD, Fabrication",
-    tools: ["Paper", "Acrylic", "Sunboard", "MDF", "Laser Cutter", "CAD"],
+    tools: ["Adobe Illustrator", "Laser Cutting", "Model Making", "Sketching", "Exhibition Planning"],
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.45 0.10 60) 0%, oklch(0.28 0.06 40) 60%, oklch(0.18 0.04 30) 100%)",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     category: "Product / IoT",
     year: "2025",
     role: "Industrial Design, CAD, Rendering, Electronics & Coding",
-    tools: ["SolidWorks", "KeyShot", "Arduino", "Coding"],
+    tools: ["SolidWorks", "Figma", "KeyShot", "Arduino / ESP32", "User Research", "Market Research", "Sketching"],
     span: "wide",
     cover:
       "linear-gradient(160deg, oklch(0.40 0.16 260) 0%, oklch(0.25 0.10 290) 100%)",
@@ -128,14 +128,14 @@ export const projects: Project[] = [
   },
   {
     slug: "furniture",
-    title: "Furniture Study",
+    title: "Furniture Design",
     tagline: "Form, material, hands-on fabrication",
     description:
       "A furniture design project exploring form, material, and the resistance of real materials under the hand.",
     category: "Furniture",
-    year: "2023",
+    year: "2025",
     role: "Concept, Fabrication",
-    tools: ["Wood, Metal", "Hand Tools", "Workshop"],
+    tools: ["SolidWorks", "KeyShot", "Model Making", "Material Exploration", "Woodworking", "Prototyping"],
     span: "tall",
     cover:
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
