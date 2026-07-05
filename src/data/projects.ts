@@ -141,20 +141,6 @@ export const projects: Project[] = [
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
   },
   {
-    slug: "mechanisms",
-    title: "Simple Mechanical Devices",
-    tagline: "Linkages in motion",
-    description:
-      "An exploration of simple mechanical systems and linkage-based motion — built, broken, and rebuilt.",
-    category: "Mechanism",
-    year: "2022",
-    role: "Engineering Design",
-    tools: ["Cardboard", "Wire", "Sketch"],
-    span: "regular",
-    cover:
-      "linear-gradient(120deg, oklch(0.35 0.10 260) 0%, oklch(0.50 0.20 285) 100%)",
-  },
-  {
     slug: "ceramic-tic-tac-toe",
     title: "Ceramic Tic Tac Toe",
     tagline: "Material study in clay",
