@@ -35,6 +35,7 @@ export const projects: Project[] = [
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.75 0.05 90) 0%, oklch(0.55 0.06 80) 55%, oklch(0.28 0.04 60) 100%)",
+    hero: venaCover,
   },
   {
     slug: "projects-quest",
