@@ -74,9 +74,9 @@ export const projects: Project[] = [
     description:
       "A table lamp built from 25 hand-twisted 4.5 mm aluminium rods arranged in a radial cage between a wooden base and cap — designed so the projected shadow becomes the primary form.",
     category: "Product / Light",
-    year: "2025",
+    year: "2026",
     role: "Material Exploration, Manual Making, Fabrication",
-    tools: ["Aluminium Rods", "Wood Joinery", "Hand Twisting", "Buffing"],
+    tools: ["Aluminium Wire", "Hand Fabrication", "Model Making", "Sketching", "Lighting Exploration"],
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.30 0.08 80) 0%, oklch(0.18 0.04 60) 60%, oklch(0.12 0.02 40) 100%)",
