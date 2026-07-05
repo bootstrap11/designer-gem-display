@@ -114,7 +114,7 @@ function LumosPage() {
             <div>
               <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground mb-3">Tools & Materials</p>
               <ul className="flex flex-wrap gap-2">
-                {["4.5mm Aluminium Rods", "Wood Joinery", "Hand Twisting", "Buffing", "LED"].map((t) => (
+                {["Aluminium Wire", "Hand Fabrication", "Model Making", "Sketching", "Lighting Exploration"].map((t) => (
                   <li key={t} className="rounded-full border border-border/60 px-3 py-1 text-xs">
                     {t}
                   </li>
