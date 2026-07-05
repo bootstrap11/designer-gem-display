@@ -96,7 +96,7 @@ function ExhibitionPage() {
             <div className="mt-10 flex flex-wrap items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
               <span>Exhibition Design</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
-              <span>2025</span>
+              <span>2026</span>
             </div>
             <h1 className="mt-6 font-serif text-6xl md:text-8xl leading-[0.95] text-balance">
               Collapsible Display Structure
