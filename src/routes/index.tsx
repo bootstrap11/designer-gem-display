@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+import venaCoverImg from "@/assets/vena/Cover_page.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
