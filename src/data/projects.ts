@@ -155,20 +155,6 @@ export const projects: Project[] = [
       "linear-gradient(140deg, oklch(0.65 0.08 80) 0%, oklch(0.40 0.10 30) 50%, oklch(0.20 0.10 280) 100%)",
   },
   {
-    slug: "halo-chair",
-    title: "Halo Chair",
-    tagline: "Material finishes — plastic",
-    description:
-      "A material-driven furniture concept exploring plastic and lightweight structures.",
-    category: "Furniture",
-    year: "2023",
-    role: "CMF, Concept",
-    tools: ["Plastic", "Rotomold Study", "Rhino"],
-    span: "regular",
-    cover:
-      "linear-gradient(135deg, oklch(0.62 0.16 200) 0%, oklch(0.40 0.18 270) 100%)",
-  },
-  {
     slug: "rendering",
     title: "Rendering & Visualization",
     tagline: "3D + KeyShot explorations",
