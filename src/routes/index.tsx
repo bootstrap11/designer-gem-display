@@ -94,8 +94,8 @@ function Index() {
               <span className="h-px w-6 bg-foreground/40" />
               <span>Product / Air Care</span>
             </div>
-            <h3 className="mt-3 font-serif text-3xl md:text-5xl leading-tight">VENA</h3>
-            <p className="mt-1 text-sm text-muted-foreground max-w-md">Nature's Flow. Purified.</p>
+            <h3 className="mt-3 font-serif text-3xl md:text-5xl leading-tight sr-only">VENA</h3>
+            <p className="sr-only">Nature's Flow. Purified.</p>
             <div className="mt-3 flex items-center gap-2 text-xs text-foreground/70 opacity-0 -translate-y-1 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
               <span>View project</span>
               <span aria-hidden>→</span>
