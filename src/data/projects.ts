@@ -59,9 +59,9 @@ export const projects: Project[] = [
     description:
       "A UI/UX design project for a social sports booking and player matchmaking platform.",
     category: "UI / UX",
-    year: "2024",
+    year: "2025",
     role: "Research, Wireframes, Visual Design",
-    tools: ["Figma", "User Interviews", "Prototyping"],
+    tools: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "User Research", "User Journey Mapping", "Wireframing", "Prototyping"],
     span: "regular",
     cover:
       "linear-gradient(120deg, oklch(0.55 0.18 230) 0%, oklch(0.35 0.20 270) 50%, oklch(0.25 0.15 300) 100%)",
