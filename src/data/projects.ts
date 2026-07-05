@@ -2,6 +2,7 @@ const questCover = "/quest/board.jpeg";
 const kridaCover = { url: "/krida/krida-0009.jpg" };
 const lumosCover = "/lumos/cover.jpg";
 const exhibitionCover = "/exhibition/display.png";
+const venaCover = "/__l5e/assets-v1/cabaf6ba-759f-4bd1-8307-710cac420caa/Cover_page.png";
 
 export type Project = {
   slug: string;
@@ -34,6 +35,7 @@ export const projects: Project[] = [
     span: "wide",
     cover:
       "linear-gradient(135deg, oklch(0.75 0.05 90) 0%, oklch(0.55 0.06 80) 55%, oklch(0.28 0.04 60) 100%)",
+    hero: venaCover,
   },
   {
     slug: "projects-quest",
@@ -139,20 +141,6 @@ export const projects: Project[] = [
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
   },
   {
-    slug: "mechanisms",
-    title: "Simple Mechanical Devices",
-    tagline: "Linkages in motion",
-    description:
-      "An exploration of simple mechanical systems and linkage-based motion — built, broken, and rebuilt.",
-    category: "Mechanism",
-    year: "2022",
-    role: "Engineering Design",
-    tools: ["Cardboard", "Wire", "Sketch"],
-    span: "regular",
-    cover:
-      "linear-gradient(120deg, oklch(0.35 0.10 260) 0%, oklch(0.50 0.20 285) 100%)",
-  },
-  {
     slug: "ceramic-tic-tac-toe",
     title: "Ceramic Tic Tac Toe",
     tagline: "Material study in clay",
@@ -167,20 +155,6 @@ export const projects: Project[] = [
       "linear-gradient(140deg, oklch(0.65 0.08 80) 0%, oklch(0.40 0.10 30) 50%, oklch(0.20 0.10 280) 100%)",
   },
   {
-    slug: "halo-chair",
-    title: "Halo Chair",
-    tagline: "Material finishes — plastic",
-    description:
-      "A material-driven furniture concept exploring plastic and lightweight structures.",
-    category: "Furniture",
-    year: "2023",
-    role: "CMF, Concept",
-    tools: ["Plastic", "Rotomold Study", "Rhino"],
-    span: "regular",
-    cover:
-      "linear-gradient(135deg, oklch(0.62 0.16 200) 0%, oklch(0.40 0.18 270) 100%)",
-  },
-  {
     slug: "rendering",
     title: "Rendering & Visualization",
     tagline: "3D + KeyShot explorations",
@@ -193,20 +167,6 @@ export const projects: Project[] = [
     span: "regular",
     cover:
       "linear-gradient(135deg, oklch(0.50 0.22 300) 0%, oklch(0.25 0.15 260) 100%)",
-  },
-  {
-    slug: "paralympics-trophy",
-    title: "Paralympics Trophy",
-    tagline: "Form semantics study",
-    description:
-      "A form semantics study translating symbolism into a physical trophy design.",
-    category: "Form Study",
-    year: "2022",
-    role: "Concept, Sculpting",
-    tools: ["Clay", "Rhino", "KeyShot"],
-    span: "tall",
-    cover:
-      "linear-gradient(160deg, oklch(0.55 0.18 90) 0%, oklch(0.35 0.12 60) 40%, oklch(0.18 0.08 280) 100%)",
   },
 ];
 

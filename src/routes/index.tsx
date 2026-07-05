@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ProjectCard } from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
+import venaCoverImg from "@/assets/vena/Cover_page.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -73,8 +74,38 @@ function Index() {
         </div>
       </section>
 
+      {/* Featured — VENA */}
+      <section className="mx-auto max-w-7xl px-6 pt-10 pb-4">
+        <Link
+          to="/projects/vena"
+          className="group relative block overflow-hidden rounded-3xl border border-border/40"
+        >
+          <div className="aspect-[16/9] md:aspect-[21/9]">
+            <img
+              src={venaCoverImg.url}
+              alt="VENA — Nature's Flow. Purified."
+              className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/30 to-transparent" />
+          </div>
+          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+            <div className="flex items-center gap-2 text-xs tracking-widest uppercase text-foreground/80">
+              <span className="font-mono">01</span>
+              <span className="h-px w-6 bg-foreground/40" />
+              <span>Product / Air Care</span>
+            </div>
+            <h3 className="mt-3 font-serif text-3xl md:text-5xl leading-tight sr-only">VENA</h3>
+            <p className="sr-only">Nature's Flow. Purified.</p>
+            <div className="mt-3 flex items-center gap-2 text-xs text-foreground/70 opacity-0 -translate-y-1 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
+              <span>View project</span>
+              <span aria-hidden>→</span>
+            </div>
+          </div>
+        </Link>
+      </section>
+
       {/* Work masonry */}
-      <section id="work" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
+      <section id="work" className="mx-auto max-w-7xl px-6 py-10 md:py-16">
         <div className="grid grid-cols-2 gap-3">
           {projects.map((p, i) => (
             <ProjectCard key={p.slug} project={p} index={i} uniform />
