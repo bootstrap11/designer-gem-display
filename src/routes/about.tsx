@@ -91,23 +91,16 @@ function About() {
       <section className="mx-auto max-w-5xl px-6 py-16 grid gap-16 md:grid-cols-[2fr_1fr]">
         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed text-pretty">
           <p>
-            I'm a third-year industrial design student at the Institute of
-            Design, Nirma University in Ahmedabad. For me, design goes
-            beyond aesthetics — it serves as a powerful tool for addressing
-            everyday challenges that often go unnoticed.
+            I'm Shyam Hadani, a Product and Interaction Designer with an interest in designing products and systems that solve meaningful, real-world problems.
           </p>
           <p>
-            Alongside design, I am also keen on exploring project
-            management — understanding how ideas are brought to life
-            through structured planning, collaboration and execution. I
-            look forward to gaining hands-on experience in both design and
-            project coordination to develop a well-rounded approach to
-            problem-solving.
+            My work combines user research, material exploration, prototyping, and iterative development to transform ideas into functional experiences. I enjoy working across physical products, interaction design, furniture, and material-driven explorations, believing that the best solutions emerge through continuous experimentation and making.
           </p>
           <p>
-            My practice moves between physical product, furniture, IoT and
-            interfaces. I sketch a lot, prototype faster than I'd like to
-            admit, and think with my hands.
+            I believe design is a process of learning through observation, iteration, and hands-on exploration. Every project begins with understanding people and context, followed by sketching, testing, building, and refining until the solution feels intuitive and purposeful. Working across different scales and disciplines has helped me develop a flexible approach to problem-solving.
+          </p>
+          <p>
+            Alongside design, I am actively exploring project management and the collaborative processes that bring ideas from concept to reality. I am interested in understanding how multidisciplinary teams work together, how projects are planned and executed, and how thoughtful coordination can elevate both the design process and the final outcome. My goal is to develop as a designer who can contribute creatively while also understanding the broader product development journey.
           </p>
         </div>
         <aside className="space-y-10 text-sm">
