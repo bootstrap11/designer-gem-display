@@ -77,7 +77,7 @@ function LumosPage() {
             <div className="mt-10 flex flex-wrap items-center gap-3 text-xs tracking-[0.3em] uppercase text-muted-foreground">
               <span>Product / Light</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
-              <span>2025</span>
+              <span>2026</span>
               <span className="h-px w-6 bg-muted-foreground/60" />
               <span>Elements of Form & Space III</span>
             </div>
