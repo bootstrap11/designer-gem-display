@@ -18,6 +18,7 @@ import { Route as ProjectsVenaRouteImport } from './routes/projects.vena'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
 import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
+import { Route as ProjectsFreezeaseRouteImport } from './routes/projects.freezease'
 import { Route as ProjectsExhibitionDisplayRouteImport } from './routes/projects.exhibition-display'
 import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
 
@@ -66,6 +67,11 @@ const ProjectsKridaRoute = ProjectsKridaRouteImport.update({
   path: '/projects/krida',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsFreezeaseRoute = ProjectsFreezeaseRouteImport.update({
+  id: '/projects/freezease',
+  path: '/projects/freezease',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjectsExhibitionDisplayRoute =
   ProjectsExhibitionDisplayRouteImport.update({
     id: '/projects/exhibition-display',
@@ -85,6 +91,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
+  '/projects/freezease': typeof ProjectsFreezeaseRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -98,6 +105,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
+  '/projects/freezease': typeof ProjectsFreezeaseRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -112,6 +120,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
+  '/projects/freezease': typeof ProjectsFreezeaseRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -127,6 +136,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/projects/$slug'
     | '/projects/exhibition-display'
+    | '/projects/freezease'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -140,6 +150,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/projects/$slug'
     | '/projects/exhibition-display'
+    | '/projects/freezease'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -153,6 +164,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/projects/$slug'
     | '/projects/exhibition-display'
+    | '/projects/freezease'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -167,6 +179,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   ProjectsSlugRoute: typeof ProjectsSlugRoute
   ProjectsExhibitionDisplayRoute: typeof ProjectsExhibitionDisplayRoute
+  ProjectsFreezeaseRoute: typeof ProjectsFreezeaseRoute
   ProjectsKridaRoute: typeof ProjectsKridaRoute
   ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
@@ -239,6 +252,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsKridaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/freezease': {
+      id: '/projects/freezease'
+      path: '/projects/freezease'
+      fullPath: '/projects/freezease'
+      preLoaderRoute: typeof ProjectsFreezeaseRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/exhibition-display': {
       id: '/projects/exhibition-display'
       path: '/projects/exhibition-display'
@@ -263,6 +283,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   ProjectsSlugRoute: ProjectsSlugRoute,
   ProjectsExhibitionDisplayRoute: ProjectsExhibitionDisplayRoute,
+  ProjectsFreezeaseRoute: ProjectsFreezeaseRoute,
   ProjectsKridaRoute: ProjectsKridaRoute,
   ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,

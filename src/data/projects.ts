@@ -3,7 +3,9 @@ const kridaCover = { url: "/krida/krida-0009.jpg" };
 const lumosCover = "/lumos/cover.jpg";
 const exhibitionCover = "/exhibition/display.png";
 import venaCoverAsset from "@/assets/vena/Cover_page.png.asset.json";
+import freezeaseCoverAsset from "@/assets/freezease/Product_photography_1.png.asset.json";
 const venaCover = venaCoverAsset.url;
+const freezeaseCover = freezeaseCoverAsset.url;
 
 export type Project = {
   slug: string;
@@ -115,17 +117,18 @@ export const projects: Project[] = [
   },
   {
     slug: "freezease",
-    title: "Freezease",
-    tagline: "Hands-free cryotherapy",
+    title: "FREEZEASE",
+    tagline: "Hands-free modular cryotherapy sleeve",
     description:
-      "A hands-free cryotherapy product focused on comfort, ergonomics, and everyday usability.",
-    category: "Product Design",
-    year: "2023",
-    role: "Ergonomics, CMF, Prototyping",
-    tools: ["Fusion 360", "KeyShot", "Foam Modelling"],
-    span: "regular",
+      "A hands-free modular cryotherapy sleeve for musculoskeletal recovery — ergonomic, wearable, and adaptable across upper and lower extremities.",
+    category: "Product / Wearable Therapy",
+    year: "2024",
+    role: "Research, Ergonomics, CAD, Prototyping",
+    tools: ["User Research", "Task Analysis", "SolidWorks", "KeyShot", "Sketching", "Pattern Making", "Stitching", "Prototyping"],
+    span: "wide",
     cover:
-      "linear-gradient(135deg, oklch(0.60 0.14 240) 0%, oklch(0.30 0.18 280) 100%)",
+      "linear-gradient(135deg, oklch(0.60 0.14 290) 0%, oklch(0.30 0.18 280) 100%)",
+    hero: freezeaseCover,
   },
   {
     slug: "furniture",
