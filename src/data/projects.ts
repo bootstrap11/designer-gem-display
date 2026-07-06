@@ -2,7 +2,8 @@ const questCover = "/quest/board.jpeg";
 const kridaCover = { url: "/krida/krida-0009.jpg" };
 const lumosCover = "/lumos/cover.jpg";
 const exhibitionCover = "/exhibition/display.png";
-const venaCover = "/__l5e/assets-v1/cabaf6ba-759f-4bd1-8307-710cac420caa/Cover_page.png";
+import venaCoverAsset from "@/assets/vena/Cover_page.png.asset.json";
+const venaCover = venaCoverAsset.url;
 
 export type Project = {
   slug: string;
