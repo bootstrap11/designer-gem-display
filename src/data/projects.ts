@@ -3,7 +3,9 @@ const kridaCover = { url: "/krida/krida-0009.jpg" };
 const lumosCover = "/lumos/cover.jpg";
 const exhibitionCover = "/exhibition/display.png";
 import venaCoverAsset from "@/assets/vena/Cover_page.png.asset.json";
+import freezeaseCoverAsset from "@/assets/freezease/Product_photography_1.png.asset.json";
 const venaCover = venaCoverAsset.url;
+const freezeaseCover = freezeaseCoverAsset.url;
 
 export type Project = {
   slug: string;
