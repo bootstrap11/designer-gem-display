@@ -142,20 +142,6 @@ export const projects: Project[] = [
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
   },
   {
-    slug: "ceramic-tic-tac-toe",
-    title: "Ceramic Tic Tac Toe",
-    tagline: "Material study in clay",
-    description:
-      "A material exploration project using ceramic to design a tactile board game with weight and ritual.",
-    category: "Material Study",
-    year: "2022",
-    role: "Material, Form",
-    tools: ["Ceramic", "Slip-casting", "Glazing"],
-    span: "wide",
-    cover:
-      "linear-gradient(140deg, oklch(0.65 0.08 80) 0%, oklch(0.40 0.10 30) 50%, oklch(0.20 0.10 280) 100%)",
-  },
-  {
     slug: "rendering",
     title: "Rendering & Visualization",
     tagline: "3D + KeyShot explorations",
