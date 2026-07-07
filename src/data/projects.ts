@@ -4,8 +4,10 @@ const lumosCover = "/lumos/cover.jpg";
 const exhibitionCover = "/exhibition/display.png";
 import venaCoverAsset from "@/assets/vena/Cover_page.png.asset.json";
 import freezeaseCoverAsset from "@/assets/freezease/Product_photography_1.png.asset.json";
+import furnitureCoverAsset from "@/assets/furniture/iteration_2_render.jpg.asset.json";
 const venaCover = venaCoverAsset.url;
 const freezeaseCover = freezeaseCoverAsset.url;
+const furnitureCover = furnitureCoverAsset.url;
 
 export type Project = {
   slug: string;
@@ -143,6 +145,7 @@ export const projects: Project[] = [
     span: "tall",
     cover:
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
+    hero: furnitureCover,
   },
   {
     slug: "rendering",

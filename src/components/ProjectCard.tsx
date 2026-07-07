@@ -101,6 +101,14 @@ export function ProjectCard({ project, index, uniform }: { project: Project; ind
     );
   }
 
+  if (project.slug === "furniture") {
+    return (
+      <Link to="/projects/furniture" className={cardClass}>
+        {card}
+      </Link>
+    );
+  }
+
   return (
     <Link to="/projects/$slug" params={{ slug: project.slug }} className={cardClass}>
       {card}
