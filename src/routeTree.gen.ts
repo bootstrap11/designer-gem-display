@@ -18,6 +18,7 @@ import { Route as ProjectsVenaRouteImport } from './routes/projects.vena'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
 import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
+import { Route as ProjectsFurnitureRouteImport } from './routes/projects.furniture'
 import { Route as ProjectsFreezeaseRouteImport } from './routes/projects.freezease'
 import { Route as ProjectsExhibitionDisplayRouteImport } from './routes/projects.exhibition-display'
 import { Route as ProjectsSlugRouteImport } from './routes/projects.$slug'
@@ -67,6 +68,11 @@ const ProjectsKridaRoute = ProjectsKridaRouteImport.update({
   path: '/projects/krida',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsFurnitureRoute = ProjectsFurnitureRouteImport.update({
+  id: '/projects/furniture',
+  path: '/projects/furniture',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjectsFreezeaseRoute = ProjectsFreezeaseRouteImport.update({
   id: '/projects/freezease',
   path: '/projects/freezease',
@@ -92,6 +98,7 @@ export interface FileRoutesByFullPath {
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
   '/projects/freezease': typeof ProjectsFreezeaseRoute
+  '/projects/furniture': typeof ProjectsFurnitureRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -106,6 +113,7 @@ export interface FileRoutesByTo {
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
   '/projects/freezease': typeof ProjectsFreezeaseRoute
+  '/projects/furniture': typeof ProjectsFurnitureRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -121,6 +129,7 @@ export interface FileRoutesById {
   '/projects/$slug': typeof ProjectsSlugRoute
   '/projects/exhibition-display': typeof ProjectsExhibitionDisplayRoute
   '/projects/freezease': typeof ProjectsFreezeaseRoute
+  '/projects/furniture': typeof ProjectsFurnitureRoute
   '/projects/krida': typeof ProjectsKridaRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
@@ -137,6 +146,7 @@ export interface FileRouteTypes {
     | '/projects/$slug'
     | '/projects/exhibition-display'
     | '/projects/freezease'
+    | '/projects/furniture'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -151,6 +161,7 @@ export interface FileRouteTypes {
     | '/projects/$slug'
     | '/projects/exhibition-display'
     | '/projects/freezease'
+    | '/projects/furniture'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -165,6 +176,7 @@ export interface FileRouteTypes {
     | '/projects/$slug'
     | '/projects/exhibition-display'
     | '/projects/freezease'
+    | '/projects/furniture'
     | '/projects/krida'
     | '/projects/lumos'
     | '/projects/projects-quest'
@@ -180,6 +192,7 @@ export interface RootRouteChildren {
   ProjectsSlugRoute: typeof ProjectsSlugRoute
   ProjectsExhibitionDisplayRoute: typeof ProjectsExhibitionDisplayRoute
   ProjectsFreezeaseRoute: typeof ProjectsFreezeaseRoute
+  ProjectsFurnitureRoute: typeof ProjectsFurnitureRoute
   ProjectsKridaRoute: typeof ProjectsKridaRoute
   ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
@@ -252,6 +265,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsKridaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/furniture': {
+      id: '/projects/furniture'
+      path: '/projects/furniture'
+      fullPath: '/projects/furniture'
+      preLoaderRoute: typeof ProjectsFurnitureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/freezease': {
       id: '/projects/freezease'
       path: '/projects/freezease'
@@ -284,6 +304,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectsSlugRoute: ProjectsSlugRoute,
   ProjectsExhibitionDisplayRoute: ProjectsExhibitionDisplayRoute,
   ProjectsFreezeaseRoute: ProjectsFreezeaseRoute,
+  ProjectsFurnitureRoute: ProjectsFurnitureRoute,
   ProjectsKridaRoute: ProjectsKridaRoute,
   ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,
