@@ -145,6 +145,7 @@ export const projects: Project[] = [
     span: "tall",
     cover:
       "linear-gradient(155deg, oklch(0.42 0.12 60) 0%, oklch(0.25 0.10 30) 60%, oklch(0.18 0.08 280) 100%)",
+    hero: furnitureCover,
   },
   {
     slug: "rendering",
