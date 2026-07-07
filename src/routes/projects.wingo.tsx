@@ -438,6 +438,24 @@ function WingoPage() {
           </div>
         </section>
 
+        {/* Video Preview */}
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <p className="text-xs tracking-[0.3em] uppercase text-muted-foreground">Project Preview</p>
+          <h2 className="mt-3 font-serif text-4xl mb-3">How WINGO Works</h2>
+          <p className="text-muted-foreground max-w-3xl">
+            A short walkthrough of the WINGO device in action — detection, deterrent response and app interaction.
+          </p>
+          <div className="mt-8 rounded-3xl overflow-hidden border border-border/40 bg-muted aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/aAkZ1IktM6c"
+              title="WINGO Project Preview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-full h-full block"
+            />
+          </div>
+        </section>
+
         {/* Summary */}
         <section className="mx-auto max-w-6xl px-6 pb-24">
           <h2 className="font-serif text-4xl mb-6">Final Project Summary</h2>
