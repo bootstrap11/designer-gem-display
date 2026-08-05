@@ -17,6 +17,7 @@ import { Route as ProjectsWingoRouteImport } from './routes/projects.wingo'
 import { Route as ProjectsVenaRouteImport } from './routes/projects.vena'
 import { Route as ProjectsProjectsQuestRouteImport } from './routes/projects.projects-quest'
 import { Route as ProjectsLumosRouteImport } from './routes/projects.lumos'
+import { Route as ProjectsLucentRouteImport } from './routes/projects.lucent'
 import { Route as ProjectsKridaRouteImport } from './routes/projects.krida'
 import { Route as ProjectsFurnitureRouteImport } from './routes/projects.furniture'
 import { Route as ProjectsFreezeaseRouteImport } from './routes/projects.freezease'
@@ -63,6 +64,11 @@ const ProjectsLumosRoute = ProjectsLumosRouteImport.update({
   path: '/projects/lumos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProjectsLucentRoute = ProjectsLucentRouteImport.update({
+  id: '/projects/lucent',
+  path: '/projects/lucent',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProjectsKridaRoute = ProjectsKridaRouteImport.update({
   id: '/projects/krida',
   path: '/projects/krida',
@@ -100,6 +106,7 @@ export interface FileRoutesByFullPath {
   '/projects/freezease': typeof ProjectsFreezeaseRoute
   '/projects/furniture': typeof ProjectsFurnitureRoute
   '/projects/krida': typeof ProjectsKridaRoute
+  '/projects/lucent': typeof ProjectsLucentRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
   '/projects/vena': typeof ProjectsVenaRoute
@@ -115,6 +122,7 @@ export interface FileRoutesByTo {
   '/projects/freezease': typeof ProjectsFreezeaseRoute
   '/projects/furniture': typeof ProjectsFurnitureRoute
   '/projects/krida': typeof ProjectsKridaRoute
+  '/projects/lucent': typeof ProjectsLucentRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
   '/projects/vena': typeof ProjectsVenaRoute
@@ -131,6 +139,7 @@ export interface FileRoutesById {
   '/projects/freezease': typeof ProjectsFreezeaseRoute
   '/projects/furniture': typeof ProjectsFurnitureRoute
   '/projects/krida': typeof ProjectsKridaRoute
+  '/projects/lucent': typeof ProjectsLucentRoute
   '/projects/lumos': typeof ProjectsLumosRoute
   '/projects/projects-quest': typeof ProjectsProjectsQuestRoute
   '/projects/vena': typeof ProjectsVenaRoute
@@ -148,6 +157,7 @@ export interface FileRouteTypes {
     | '/projects/freezease'
     | '/projects/furniture'
     | '/projects/krida'
+    | '/projects/lucent'
     | '/projects/lumos'
     | '/projects/projects-quest'
     | '/projects/vena'
@@ -163,6 +173,7 @@ export interface FileRouteTypes {
     | '/projects/freezease'
     | '/projects/furniture'
     | '/projects/krida'
+    | '/projects/lucent'
     | '/projects/lumos'
     | '/projects/projects-quest'
     | '/projects/vena'
@@ -178,6 +189,7 @@ export interface FileRouteTypes {
     | '/projects/freezease'
     | '/projects/furniture'
     | '/projects/krida'
+    | '/projects/lucent'
     | '/projects/lumos'
     | '/projects/projects-quest'
     | '/projects/vena'
@@ -194,6 +206,7 @@ export interface RootRouteChildren {
   ProjectsFreezeaseRoute: typeof ProjectsFreezeaseRoute
   ProjectsFurnitureRoute: typeof ProjectsFurnitureRoute
   ProjectsKridaRoute: typeof ProjectsKridaRoute
+  ProjectsLucentRoute: typeof ProjectsLucentRoute
   ProjectsLumosRoute: typeof ProjectsLumosRoute
   ProjectsProjectsQuestRoute: typeof ProjectsProjectsQuestRoute
   ProjectsVenaRoute: typeof ProjectsVenaRoute
@@ -258,6 +271,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ProjectsLumosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/projects/lucent': {
+      id: '/projects/lucent'
+      path: '/projects/lucent'
+      fullPath: '/projects/lucent'
+      preLoaderRoute: typeof ProjectsLucentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/projects/krida': {
       id: '/projects/krida'
       path: '/projects/krida'
@@ -306,6 +326,7 @@ const rootRouteChildren: RootRouteChildren = {
   ProjectsFreezeaseRoute: ProjectsFreezeaseRoute,
   ProjectsFurnitureRoute: ProjectsFurnitureRoute,
   ProjectsKridaRoute: ProjectsKridaRoute,
+  ProjectsLucentRoute: ProjectsLucentRoute,
   ProjectsLumosRoute: ProjectsLumosRoute,
   ProjectsProjectsQuestRoute: ProjectsProjectsQuestRoute,
   ProjectsVenaRoute: ProjectsVenaRoute,

@@ -45,6 +45,14 @@ export function ProjectCard({ project, index, uniform }: { project: Project; ind
     ? "group relative block overflow-hidden rounded-2xl border border-border/40 aspect-[4/3]"
     : `group relative block overflow-hidden rounded-2xl border border-border/40 ${spanClass[project.span]}`;
 
+  if (project.slug === "lucent") {
+    return (
+      <Link to="/projects/lucent" className={cardClass}>
+        {card}
+      </Link>
+    );
+  }
+
   if (project.slug === "krida") {
     return (
       <Link to="/projects/krida" className={cardClass}>
