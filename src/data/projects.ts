@@ -30,7 +30,23 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "lucent",
+    title: "LUCENT",
+    tagline: "Beer Pixel Wall — waste glass as a programmable display",
+    description:
+      "An interactive pixel display that transforms discarded beer bottles into a programmable visual installation, combining upcycling, modular construction and digital interaction for hospitality spaces.",
+    category: "Installation / Light",
+    year: "2026",
+    role: "Concept, Fabrication, Electronics & Coding",
+    tools: ["Upcycling", "Modular Fabrication", "Arduino", "Addressable LEDs", "Woodworking", "Coding"],
+    span: "wide",
+    cover:
+      "linear-gradient(135deg, oklch(0.55 0.20 30) 0%, oklch(0.50 0.18 140) 50%, oklch(0.35 0.16 280) 100%)",
+    hero: lucentCover,
+  },
+  {
     slug: "vena",
+
     title: "VENA",
     tagline: "Nature's Flow. Purified.",
     description:
